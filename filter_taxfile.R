@@ -58,10 +58,12 @@ for (i in clean_names){
 
 length(toss2)
 
-filtered2<-tax[-toss2,]
+toss2_noNA<-na.omit(toss2)
+
+filtered2<-filtered[-toss2_noNA,]
 
 dim(filtered2)
 
 
 
-write.table(filtered, file = "C:/Users/acahill/Desktop/filtered.tax",row.names=FALSE,sep= )
+write.table(filtered2, file = "C:/Users/acahill/Desktop/filtered2.tax",row.names=FALSE,sep= )
