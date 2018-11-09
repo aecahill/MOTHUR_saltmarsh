@@ -69,10 +69,46 @@ filtered2<-filtered[-toss2_noNA,]
 
 dim(filtered2)
 
-
+#MOVING THIS TO A SEPARATE CODE WINDOW
 #now need to remove stuff in the reference that is not in the taxonomy.
 #read in large alignment file with seqinR -- may need to jigger names again?
-#use matching to check reference against filtered taxonomy file
+
+refalign<-read.alignment("C:/Users/acahill/Desktop/reference.align",format="fasta")
+
+#clean up names again
+
+listnamesref<-as.list(refalign$nam) #make a list of names of sequences
+
+clean_namesref=list() #empty vector of names
+namesreflength<-c(1:length(listnamesref)) #vector from 1 to number of seqs
+
+#change the format so that the seq names match the format in the taxonomy file
+for (i in namesreflength){
+  e<-gsub("[\t]", "", listnamesref[i])
+  clean_namesref<-c(clean_namesref,e)
+  
+}
+
+clean_namesref[1:5]
+length(clean_namesref)
+
+
+#use matching to check reference against filtered taxonomy file (filtered2)
+
+matches<-c()
+
+for (i in clean_namesref){
+  matchq<-match(i,filtered2$ï..V1)
+  matches<-append(matches,matchq)
+  
+}
+
+length(matches)
+head(matches)
+
+#if is.na(matches[i])=TRUE, remove 
+
+
 #if match found, T, else, F to create vector of T and F
 #remove lines corresponding to F rows
 #write out new alignment
