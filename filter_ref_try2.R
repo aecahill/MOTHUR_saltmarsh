@@ -35,7 +35,7 @@ length(clean_namesref)
 
 tossref<-c()
 
-#make vector to toss FROM REFERENCE
+#make vector to KEEP FROM REFERENCE IE THESE MATCH
 for (i in clean_namesref){
   rownumberref<-match(i,filtered2$ï..V1)
   tossref<-append(tossref,rownumberref)
@@ -44,10 +44,16 @@ for (i in clean_namesref){
 
 length(tossref)
 
+#GET RID OF NO MATCH TERMS
+
 tossref_noNA<-na.omit(tossref)
 
-reffiltered_names<-refalign$nam[-tossref_noNA]
-reffiltered_seqs<-refalign$seq[-tossref_noNA]
+length(tossref_noNA)
+
+#NAMES AND SEQS of terms WITH MATCHES
+
+reffiltered_names<-refalign$nam[tossref_noNA]
+reffiltered_seqs<-refalign$seq[tossref_noNA]
 
 write.fasta(sequences=reffiltered_seqs,names=reffiltered_names,file.out="C:/Users/acahill/Desktop/reffiltered.fasta")
 
