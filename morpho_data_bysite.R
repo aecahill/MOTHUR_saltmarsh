@@ -6,29 +6,29 @@ species.scores <- as.data.frame(scores(marshnmds, "species"))
 species.scores$species <- rownames(species.scores)
 head(species.scores)
 
-grp.1 <- data.scores[datascores$Sample == "1", ][chull(datascores[datascores$Sample == 
-                                                                       "1", c("NMDS1", "NMDS2")]), ]
-grp.2 <- data.scores[datascores$Sample == "2", ][chull(datascores[datascores$Sample == 
-                                                                      "2", c("NMDS1", "NMDS2")]), ]
-grp.3 <- data.scores[datascores$Sample == "3", ][chull(datascores[datascores$Sample == 
-                                                                    "3", c("NMDS1", "NMDS2")]), ]
-grp.4 <- data.scores[datascores$Sample == "4", ][chull(datascores[datascores$Sample == 
-                                                                    "4", c("NMDS1", "NMDS2")]), ]
-grp.5 <- data.scores[datascores$Sample == "5", ][chull(datascores[datascores$Sample == 
-                                                                    "5", c("NMDS1", "NMDS2")]), ]
-grp.6 <- data.scores[datascores$Sample == "6", ][chull(datascores[datascores$Sample == 
-                                                                    "6", c("NMDS1", "NMDS2")]), ]
-grp.7 <- data.scores[datascores$Sample == "7", ][chull(datascores[datascores$Sample == 
-                                                                    "7", c("NMDS1", "NMDS2")]), ]
+grp.1 <- data.scores[datascores$Sample2 == "A", ][chull(datascores[datascores$Sample2 == 
+                                                                       "A", c("NMDS1", "NMDS2")]), ]
+grp.2 <- data.scores[datascores$Sample2 == "B", ][chull(datascores[datascores$Sample2 == 
+                                                                      "B", c("NMDS1", "NMDS2")]), ]
+grp.3 <- data.scores[datascores$Sample2 == "C", ][chull(datascores[datascores$Sample2 == 
+                                                                    "C", c("NMDS1", "NMDS2")]), ]
+grp.4 <- data.scores[datascores$Sample2 == "D", ][chull(datascores[datascores$Sample2 == 
+                                                                    "D", c("NMDS1", "NMDS2")]), ]
+grp.5 <- data.scores[datascores$Sample2 == "E", ][chull(datascores[datascores$Sample2 == 
+                                                                    "E", c("NMDS1", "NMDS2")]), ]
+grp.6 <- data.scores[datascores$Sample2 == "F", ][chull(datascores[datascores$Sample2 == 
+                                                                    "F", c("NMDS1", "NMDS2")]), ]
+grp.7 <- data.scores[datascores$Sample2 == "G", ][chull(datascores[datascores$Sample2 == 
+                                                                    "G", c("NMDS1", "NMDS2")]), ]
 hull.datasamples <- rbind(grp.1, grp.2, grp.3, grp.4,grp.5,grp.6,grp.7) #turn the hulls into a single dataframe
-hull.sample<-c("1","1","2","2","3","3","4","4","5","5","6","6","7","7") #add column for groups (these are based on this data only)
+hull.sample<-c("A","A","B","B","C","C","D","D","E","E","F","F","G","G") #add column for groups (these are based on this data only)
 hull.datasamples<-cbind(hull.datasamples,hull.sample) #attach group names to hull dataframe
 
 #plot in ggplot
 
 ggplot() +
   geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Sample2),size=5) + # add the point markers
-  scale_colour_manual(values=c("green","darkorange2","gold","black","blue","purple","red")) +
+  scale_colour_manual(values=wes_palette("Zissou1", 7, type = "continuous")) +
   coord_equal() +
   theme_bw()+
   theme(axis.text.x = element_blank(),  # remove x-axis text

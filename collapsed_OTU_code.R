@@ -18,6 +18,26 @@ otu2<-t(otu)
 sites<-read.table("C:/Users/acahill/Desktop/marsh_biomol_sites.txt",header=TRUE)
 
 
+sampleA<-colSums(otu2[1:3,])
+sampleB<-colSums(otu2[4:6,])
+sampleC<-colSums(otu2[7:9,])
+sampleD<-colSums(otu2[10:12,])
+sampleE<-colSums(otu2[13:15,])
+sampleF<-colSums(otu2[16:18,])
+sampleG<-colSums(otu2[19:21,])
+
+allsamples<-rbind(sampleA,sampleB,sampleC,sampleD,sampleE,sampleF,sampleG)
+allsamples2<-cbind(c("A","B","C","D","E","F","G"),allsamples)
+
+colnames(allsamples2)<-c("Site",colnames(allsamples))
+
+
+
+
+
+
+
+
 #need file asus3 which is the matrix of species
 #need file sites with a column of site names and region names
 
@@ -26,8 +46,8 @@ sites<-read.table("C:/Users/acahill/Desktop/marsh_biomol_sites.txt",header=TRUE)
 library(vegan)
 library(pracma)
 
-#fourth-root transform the data
-vec<-1:21
+#fourth-root transform the data 
+vec<-1:104
 marsh4 = NULL
 
 for (i in vec) {
@@ -94,75 +114,4 @@ ggplot() +
         plot.background = element_blank())+ 
   geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.sample),alpha=0.20) #add polygon based on the hulls calculated
 
-#diversity statistics PICK IT UP HERE!!!!
 
-collrich<-read.table("C:/Users/acahill/Desktop/otucollapsedoct2.txt",header=TRUE)
-asuscolldiv<-cbind(diversity(otu2,index="simpson"),collrich) #calculate simpsons index, bind to site information
-
-colnames(asuscolldiv)<-c("simpsons","margalef","asu","Location","site") #rename columns
-
-
-summary(aov(asusdiv$simpsons~asusdiv$Sea)) #anova among regions
-TukeyHSD(aov(asusdiv$simpsons~asusdiv$Sea)) #post-hoc tests among regions
-
-#Plot of diversity stats
-
-ggplot(asuscolldiv, aes(x=site, y=simpsons,color=Location))+ 
-  geom_boxplot() +
-  geom_point(cex=4)+
-  theme_bw()+
-  theme(panel.background = element_blank(), 
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        plot.background = element_blank())+
-  xlab("\nSite")+ylab("Simpsons\n")+
-  scale_colour_manual(values=c("darkorange2","gold","purple","green","black","red"),labels=c("Baltic","Biscay","Gulf of Lions","Adriatic","Black","Red"))+
-  scale_x_discrete(labels=c("Karkle","Palanga","Lekeitio","Pasaia","Zumaia","Cassidaigne","Elvine","Rioux","Due Sorelle","Grotta Azzurra","Scalaccia","Aladja","Cherninos","Kamchia","Janib Sa'ara","Qaham"))+
-  theme(axis.text.x= element_text(size=12))+
-  theme(axis.text.y= element_text(size=16))+
-  theme(axis.title.x=element_text(size=16))+
-  theme(axis.title.y=element_text(size=16))+
-  #theme(legend.position="none")+
-  ylim(0,1)+
-  #annotate("text", x = 1, y = 0.63, label = "ab", size = 6)+
-  #annotate("text", x = 2, y = 0.81, label = "ab", size = 6)+
-  #annotate("text", x = 3, y = 0.89, label = "ab", size = 6)+
-  #annotate("text", x = 4, y = 0.92, label = "b", size = 6)+
-  #annotate("text", x = 5, y = 0.72, label = "ab", size = 6)+
-  #annotate("text", x = 6, y = 0.43, label = "a", size = 6)+
-  #annotate("text", x = 7, y = 0.84, label = "ab", size = 6)+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-#add margalef
-
-
-
-summary(aov(collrich$margalef~collrich$region)) #anova among regions
-TukeyHSD(aov(collrich$margalef~collrich$region)) #post-hoc tests among regions
-
-#Plot of richness stats
-
-ggplot(asuscolldiv, aes(x=site, y=margalef,color=Location))+ 
-  geom_boxplot() +
-  geom_point(cex=4)+
-  theme_bw()+
-  theme(panel.background = element_blank(), 
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        plot.background = element_blank())+
-  xlab("\nSite")+ylab("Margalef\n")+
-  scale_colour_manual(values=c("darkorange2","gold","purple","green","black","red"),labels=c("Baltic","Biscay","Gulf of Lions","Adriatic","Black","Red"))+
-  scale_x_discrete(labels=c("Karkle","Palanga","Lekeitio","Pasaia","Zumaia","Cassidaigne","Elvine","Rioux","Due Sorelle","Grotta Azzurra","Scalaccia","Aladja","Cherninos","Kamchia","Janib Sa'ara","Qaham"))+
-  theme(axis.text.x= element_text(size=12))+
-  theme(axis.text.y= element_text(size=16))+
-  theme(axis.title.x=element_text(size=16))+
-  theme(axis.title.y=element_text(size=16))+
-  ylim(0,2.25)+
-  #annotate("text", x = 1, y = 0.63, label = "ab", size = 6)+
-  #annotate("text", x = 2, y = 0.81, label = "ab", size = 6)+
-  #annotate("text", x = 3, y = 0.89, label = "ab", size = 6)+
-  #annotate("text", x = 4, y = 0.92, label = "b", size = 6)+
-  #annotate("text", x = 5, y = 0.72, label = "ab", size = 6)+
-  #annotate("text", x = 6, y = 0.43, label = "a", size = 6)+
-  #annotate("text", x = 7, y = 0.84, label = "ab", size = 6)+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
