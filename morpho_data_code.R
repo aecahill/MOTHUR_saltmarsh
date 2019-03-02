@@ -1,11 +1,12 @@
 #need file marsh which is the matrix of species
 #need file marshsites 
 
-marsh<-read.table("C:/Users/acahill/Desktop/marsh.txt",header=TRUE)
-marshsites<-read.table("C:/Users/acahill/Desktop/marsh_sites.txt",header=TRUE)
+marsh<-read.table("C:/Users/acahill/Desktop/morpho_marsh.txt",header=TRUE)
+marshsites<-read.table("C:/Users/acahill/Desktop/morpho_marsh_sites.txt",header=TRUE)
 
 #load vegan
 library(vegan)
+library(wesanderson)
 
 #compute NMDS
 marshnmds<-metaMDS(marsh)
@@ -39,15 +40,17 @@ grp.a <- data.scores[datascores$Month == "April", ][chull(datascores[datascores$
                                                                         "April", c("NMDS1", "NMDS2")]), ]
 grp.b <- data.scores[datascores$Month == "July", ][chull(datascores[datascores$Month == 
                                                                       "July", c("NMDS1", "NMDS2")]), ]
-hull.data <- rbind(grp.a, grp.b) #turn the hulls into a single dataframe
-hull.month<-c("April","April","April","April","April","July","July","July","July","July","July") #add column for groups (these are based on this data only)
+grp.c <- data.scores[datascores$Month == "October", ][chull(datascores[datascores$Month == 
+                                                                      "October", c("NMDS1", "NMDS2")]), ]
+hull.data <- rbind(grp.a, grp.b,grp.c) #turn the hulls into a single dataframe
+hull.month<-c("April","April","April","April","July","July","July","July","October","October","October","October") #add column for groups (these are based on this data only)
 hull.data<-cbind(hull.data,hull.month) #attach group names to hull dataframe
 
 #plot in ggplot
 
 ggplot() +
   geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Month),size=5) + # add the point markers
-  scale_colour_manual(values=wes_palette("Zissou1", 2, type = "continuous")) +
+  scale_colour_manual(values=wes_palette("Zissou1", 3, type = "continuous")) +
   coord_equal() +
   theme_bw()+
   theme(axis.text.x = element_blank(),  # remove x-axis text
@@ -81,9 +84,9 @@ ggplot(marshdiv, aes(x=Sample, y=simpsons, color=Month))+
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         plot.background = element_blank())+
-  geom_smooth(method='lm',formula=y~x)+
+  geom_smooth(method='lm',formula=y~x,se=FALSE)+
   xlab("\nSample")+ylab("Simpsons\n")+
-  scale_colour_manual(values=wes_palette("Zissou1", 2, type = "continuous"))+
+  scale_colour_manual(values=wes_palette("Zissou1", 3, type = "continuous"))+
   theme(axis.text.x= element_text(size=16))+
   theme(axis.text.y= element_text(size=16))+
   theme(axis.title.x=element_text(size=16))+
@@ -104,9 +107,9 @@ ggplot(marshrich, aes(x=Sample, y=Margalef, color=Month))+
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         plot.background = element_blank())+
-  geom_smooth(method='lm',formula=y~x)+
+  geom_smooth(method='lm',formula=y~x,se=FALSE)+
   xlab("\nSample")+ylab("Margalef\n")+
-  scale_colour_manual(values=wes_palette("Zissou1", 2, type = "continuous"))+
+  scale_colour_manual(values=wes_palette("Zissou1", 3, type = "continuous"))+
   theme(axis.text.x= element_text(size=16))+
   theme(axis.text.y= element_text(size=16))+
   theme(axis.title.x=element_text(size=16))+

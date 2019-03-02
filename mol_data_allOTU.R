@@ -7,7 +7,7 @@ library(vegan)
 library(ggplot2)
 library(pracma)
 
-biomolmarsh<-read.table("C:/Users/acahill/Desktop/april_OTU.txt",header=F)
+biomolmarsh<-read.table("C:/Users/acahill/Desktop/july_OTU.txt",header=F)
 sites<-read.table("C:/Users/acahill/Desktop/marsh_biomol_sites.txt",header=TRUE)
 
 #remove read names
