@@ -1,7 +1,7 @@
-marshotu<-read.table("C:/Users/aecsk/Desktop/allmarshallOTU.txt",header=TRUE)
+marshreducedotu<-read.table("C:/Users/aecsk/Desktop/allmarshreducedOTU.txt",header=TRUE)
 #rich<-read.table("C:/Users/acahill/Desktop/otu_rich_oct.txt",header=TRUE)
 
-otu2<-t(marshotu)
+otu2<-t(marshreducedotu)
 sites<-read.table("C:/Users/aecsk/Desktop/allmarshsites.txt",header=TRUE)
 
 
@@ -10,7 +10,7 @@ library(vegan)
 library(pracma)
 
 #fourth-root transform the data 
-vec<-1:16616
+vec<-1:108
 marsh4 = NULL
 
 for (i in vec) {
@@ -56,13 +56,14 @@ grp.g <- data.scores[datascores$Point == "G", ][chull(datascores[datascores$Poin
                                                                    "G", c("NMDS1", "NMDS2")]), ]
 
 hull.data <- rbind(grp.a, grp.b, grp.c, grp.d,grp.e, grp.f, grp.g) #turn the hulls into a single dataframe
-hull.sample<-c("A","A","A","A","A","A","B","B","B","B","B","B","C","C","C","C","C","C","D","D","D","D","D","D","D","E","E","E","E","E","F","F","F","F","G","G","G","G","G","G") #add column for groups (these are based on this data only)
+hull.sample<-c("A","A","A","A","A","B","B","B","B","B","B","B","C","C","C","C","D","D","D","D","D","E","E","E","E","F","F","F","F","F","G","G","G","G","G","G") #add column for groups (these are based on this data only)
 hull.data<-cbind(hull.data,hull.sample) #attach group names to hull dataframe
 
 #plot in ggplot
 
 ggplot() +
   geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Point),size=5) + # add the point markers
+  ylim(-1,1)+
   scale_colour_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   coord_equal() +
   theme_bw()+
@@ -89,13 +90,14 @@ grp.c <- data.scores[datascores$Month == "October", ][chull(datascores[datascore
                                                                          "October", c("NMDS1", "NMDS2")]), ]
 
 hull.data <- rbind(grp.a, grp.b, grp.c) #turn the hulls into a single dataframe
-hull.sample<-c("A","A","A","A","A","A","B","B","B","B","B","B","C","C","C","C","C","C","C","C") #add column for groups (these are based on this data only)
+hull.sample<-c("A","A","A","A","A","A","A","B","B","B","B","B","C","C","C","C","C","C") #add column for groups (these are based on this data only)
 hull.data<-cbind(hull.data,hull.sample) #attach group names to hull dataframe
 
 #plot in ggplot
 
 ggplot() +
   geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Month),size=5) + # add the point markers
+  ylim(-1,1)+
   scale_colour_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   coord_equal() +
   theme_bw()+
@@ -118,4 +120,4 @@ colnames(allmarshdiv)<-c("simpsons","Month","Point","Rep") #rename columns
 summary(aov(allmarshdiv$simpsons~allmarshdiv$Month))
 
 summary(aov(allmarshdiv$simpsons~allmarshdiv$Point))
-#TukeyHSD(aov(allmarshdiv$simpsons~allmarshdiv$Point))
+TukeyHSD(aov(allmarshdiv$simpsons~allmarshdiv$Point))
