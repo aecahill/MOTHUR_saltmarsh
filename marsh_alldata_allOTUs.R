@@ -1,8 +1,8 @@
-marshotu<-read.table("C:/Users/aecsk/Desktop/allmarshallOTU.txt",header=TRUE)
-#rich<-read.table("C:/Users/acahill/Desktop/otu_rich_oct.txt",header=TRUE)
+marshotu<-read.table("C:/Users/acahill/Desktop/allmarshallOTU.txt",header=TRUE)
+rich<-read.table("C:/Users/acahill/Desktop/marshrichness.txt",header=TRUE)
 
 otu2<-t(marshotu)
-sites<-read.table("C:/Users/aecsk/Desktop/allmarshsites.txt",header=TRUE)
+sites<-read.table("C:/Users/acahill/Desktop/allmarshsites.txt",header=TRUE)
 
 
 #load vegan
@@ -24,6 +24,8 @@ for (i in vec) {
 #asusotunmds<-metaMDS(otu2)
 marshotunmds<-metaMDS(marsh4)
 
+#compute PERMANOVA with a space and time interaction
+adonis(formula=marsh4~sites$Point*sites$Month)
 
 
 #moving plot to ggplot
@@ -119,3 +121,11 @@ summary(aov(allmarshdiv$simpsons~allmarshdiv$Month))
 
 summary(aov(allmarshdiv$simpsons~allmarshdiv$Point))
 #TukeyHSD(aov(allmarshdiv$simpsons~allmarshdiv$Point))
+
+
+#Richness
+summary(aov(rich$Rich_all~rich$Month))
+summary(aov(rich$Rich_all~rich$Point))
+
+TukeyHSD(aov(rich$Rich_all~rich$Point))
+
