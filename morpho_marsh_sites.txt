@@ -1,20 +1,46 @@
-Month	Sample	Replicate
-April	1	2
-April	2	2
-April	3	1
-April	4	3
-April	5	3
-April	6	1
-April	7	2
-July	1	1
-July	2	1
-July	3	2
-July	4	1
-July	5	1
-July	6	1
-July	7	1
-October	1	1
-October	2	1
-October	3	1
-October	4	1
-October	5	1
+Month	Site
+April	A
+April	A
+April	B
+April	B
+April	C
+April	C
+April	D
+April	D
+April	E
+April	E
+April	F
+April	F
+April	G
+April	G
+July	A
+July	A
+July	A
+July	B
+July	B
+July	B
+July	C
+July	C
+July	C
+July	D
+July	D
+July	D
+July	E
+July	E
+July	F
+July	F
+July	G
+October	A
+October	A
+October	B
+October	B
+October	C
+October	C
+October	D
+October	D
+October	E
+October	E
+October	F
+October	F
+October	G
+October	G

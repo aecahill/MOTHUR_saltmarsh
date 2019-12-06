@@ -1,4 +1,4 @@
-marshotu<-read.table("C:/Users/acahill/Desktop/allmarshclass.txt",header=TRUE)
+marshotu<-read.table("C:/Users/acahill/Desktop/allmarshclass2.txt",header=TRUE)
 #rich<-read.table("C:/Users/acahill/Desktop/otu_rich_oct.txt",header=TRUE)
 
 
