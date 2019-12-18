@@ -110,12 +110,12 @@ ggplot() +
 
 marshdiv<-cbind(diversity(marsh,index="simpson"),marshsites) #calculate simpsons index, bind to site information
 
-colnames(marshdiv)<-c("simpsons","Month","Site") #rename columns
+colnames(marshdiv)<-c("Simpsons","Month","Site") #rename columns
 
 
-summary(aov(marshdiv$simpsons~marshdiv$Month)) #anova among regions
+summary(aov(marshdiv$Simpsons~marshdiv$Month)) #anova among regions
 
-summary(aov(marshdiv$simpsons~marshdiv$Site)) #anova among regions
+summary(aov(marshdiv$Simpsons~marshdiv$Site)) #anova among regions
 
 
 #Margalef
@@ -126,4 +126,47 @@ summary(aov(marshrich$Richness~marshrich$Month))
 summary(aov(marshrich$Richness~marshrich$Site))
 
 
+ggplot(marshrich,aes(x=Month,y=Richness,fill=Month))+
+  geom_boxplot()+ 
+  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  theme_bw()+
+  theme(axis.title.x = element_text(size=16), # remove x-axis labels
+        axis.title.y = element_text(size=16), # remove y-axis labels
+        panel.background = element_blank(), 
+        panel.grid.major = element_blank(),  #remove major-grid labels
+        panel.grid.minor = element_blank(),  #remove minor-grid labels
+        plot.background = element_blank())
 
+ggplot(marshrich,aes(x=Site,y=Richness,fill=Site))+
+  geom_boxplot()+ 
+  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  theme_bw()+
+  theme(axis.title.x = element_text(size=16), # remove x-axis labels
+        axis.title.y = element_text(size=16), # remove y-axis labels
+        panel.background = element_blank(), 
+        panel.grid.major = element_blank(),  #remove major-grid labels
+        panel.grid.minor = element_blank(),  #remove minor-grid labels
+        plot.background = element_blank())
+
+
+ggplot(marshdiv,aes(x=Month,y=Simpsons,fill=Month))+
+  geom_boxplot()+ 
+  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  theme_bw()+
+  theme(axis.title.x = element_text(size=16), # remove x-axis labels
+        axis.title.y = element_text(size=16), # remove y-axis labels
+        panel.background = element_blank(), 
+        panel.grid.major = element_blank(),  #remove major-grid labels
+        panel.grid.minor = element_blank(),  #remove minor-grid labels
+        plot.background = element_blank())
+
+ggplot(marshdiv,aes(x=Site,y=Simpsons,fill=Site))+
+  geom_boxplot()+ 
+  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  theme_bw()+
+  theme(axis.title.x = element_text(size=16), # remove x-axis labels
+        axis.title.y = element_text(size=16), # remove y-axis labels
+        panel.background = element_blank(), 
+        panel.grid.major = element_blank(),  #remove major-grid labels
+        panel.grid.minor = element_blank(),  #remove minor-grid labels
+        plot.background = element_blank())

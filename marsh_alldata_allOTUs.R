@@ -1,5 +1,6 @@
 marshotu<-read.table("C:/Users/acahill/Desktop/allmarshallOTU.txt",header=TRUE)
 rich<-read.table("C:/Users/acahill/Desktop/marshrichness.txt",header=TRUE)
+colnames(rich)<-c("Month","Site","Rep","Richness","Rich_reduced")
 
 otu2<-t(marshotu)
 sites<-read.table("C:/Users/acahill/Desktop/allmarshsites.txt",header=TRUE)
@@ -115,17 +116,61 @@ ggplot() +
 #Diversity indices
 allmarshdiv<-cbind(diversity(marsh4,index="simpson"),sites) #calculate simpsons index, bind to site information
 
-colnames(allmarshdiv)<-c("simpsons","Month","Point","Rep") #rename columns
+colnames(allmarshdiv)<-c("Simpsons","Month","Site","Rep") #rename columns
 
-summary(aov(allmarshdiv$simpsons~allmarshdiv$Month))
+summary(aov(allmarshdiv$Simpsons~allmarshdiv$Month))
 
-summary(aov(allmarshdiv$simpsons~allmarshdiv$Point))
+summary(aov(allmarshdiv$Simpsons~allmarshdiv$Site))
 #TukeyHSD(aov(allmarshdiv$simpsons~allmarshdiv$Point))
 
 
 #Richness
-summary(aov(rich$Rich_all~rich$Month))
-summary(aov(rich$Rich_all~rich$Point))
+summary(aov(rich$Richness~rich$Month))
+summary(aov(rich$Richness~rich$Site))
 
-TukeyHSD(aov(rich$Rich_all~rich$Point))
+TukeyHSD(aov(rich$Richness~rich$Site))
 
+ggplot(rich,aes(x=Month,y=Richness,fill=Month))+
+  geom_boxplot()+ 
+  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  theme_bw()+
+  theme(axis.title.x = element_text(size=16), # remove x-axis labels
+        axis.title.y = element_text(size=16), # remove y-axis labels
+        panel.background = element_blank(), 
+        panel.grid.major = element_blank(),  #remove major-grid labels
+        panel.grid.minor = element_blank(),  #remove minor-grid labels
+        plot.background = element_blank())
+
+ggplot(rich,aes(x=Site,y=Richness,fill=Site))+
+  geom_boxplot()+ 
+  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  theme_bw()+
+  theme(axis.title.x = element_text(size=16), # remove x-axis labels
+        axis.title.y = element_text(size=16), # remove y-axis labels
+        panel.background = element_blank(), 
+        panel.grid.major = element_blank(),  #remove major-grid labels
+        panel.grid.minor = element_blank(),  #remove minor-grid labels
+        plot.background = element_blank())
+
+
+ggplot(allmarshdiv,aes(x=Month,y=Simpsons,fill=Month))+
+  geom_boxplot()+ 
+  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  theme_bw()+
+  theme(axis.title.x = element_text(size=16), # remove x-axis labels
+        axis.title.y = element_text(size=16), # remove y-axis labels
+        panel.background = element_blank(), 
+        panel.grid.major = element_blank(),  #remove major-grid labels
+        panel.grid.minor = element_blank(),  #remove minor-grid labels
+        plot.background = element_blank())
+
+ggplot(allmarshdiv,aes(x=Site,y=Simpsons,fill=Site))+
+  geom_boxplot()+ 
+  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  theme_bw()+
+  theme(axis.title.x = element_text(size=16), # remove x-axis labels
+        axis.title.y = element_text(size=16), # remove y-axis labels
+        panel.background = element_blank(), 
+        panel.grid.major = element_blank(),  #remove major-grid labels
+        panel.grid.minor = element_blank(),  #remove minor-grid labels
+        plot.background = element_blank())
