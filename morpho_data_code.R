@@ -1,8 +1,8 @@
 #need file marsh which is the matrix of species
 #need file marshsites 
 
-marsh<-read.table("C:/Users/acahill/Desktop/morpho_marsh.txt",header=TRUE)
-marshsites<-read.table("C:/Users/acahill/Desktop/morpho_marsh_sites.txt",header=TRUE)
+marsh<-read.table("C:/Users/aecsk/Desktop/morpho_marsh.txt",header=TRUE)
+marshsites<-read.table("C:/Users/aecsk/Desktop/morpho_marsh_sites.txt",header=TRUE)
 
 #load vegan
 library(vegan)
@@ -20,6 +20,9 @@ marshnmds<-metaMDS(marsh)
 #analysis of similarity for sites and regions
 anosim(marsh,marshsites$Month)
 anosim(marsh,marshsites$Site)
+
+#compute PERMANOVA with a space and time interaction
+adonis(formula=marsh~marshsites$Month*marshsites$Site)
 
 
 
@@ -48,7 +51,7 @@ hull.data<-cbind(hull.data,hull.month) #attach group names to hull dataframe
 
 #plot in ggplot
 
-ggplot() +
+morphotime<-ggplot() +
   geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Month),size=5) + # add the point markers
   scale_colour_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   coord_equal() +
@@ -82,12 +85,12 @@ grp.g <- data.scores[datascores$Site == "G", ][chull(datascores[datascores$Site 
                                                                   "G", c("NMDS1", "NMDS2")]), ]
 
 hull.data <- rbind(grp.a, grp.b, grp.c, grp.d,grp.e, grp.f, grp.g) #turn the hulls into a single dataframe
-hull.sample<-c("A","A","A","A","A","B","B","B","B","C","C","C","C","C","D","D","D","D","D","E","E","E","E","F","F","F","F","F","G","G","G","G") #add column for groups (these are based on this data only)
+hull.sample<-c("A","A","A","A","A","B","B","B","B","B","C","C","C","C","C","D","D","D","D","D","E","E","E","E","F","F","F","F","F","G","G","G","G","G") #add column for groups (these are based on this data only)
 hull.data<-cbind(hull.data,hull.sample) #attach group names to hull dataframe
 
 #plot in ggplot
 
-ggplot() +
+morphosite<-ggplot() +
   geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Site),size=5) + # add the point markers
   scale_colour_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   coord_equal() +
@@ -104,7 +107,9 @@ ggplot() +
   geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.sample),alpha=0.20) #add polygon based on the hulls calculated
 
 
+library(cowplot)
 
+plot_grid(morphosite,morphotime,labels=c("A","B"),ncol=1)
 
 #diversity statistics
 
@@ -113,20 +118,38 @@ marshdiv<-cbind(diversity(marsh,index="simpson"),marshsites) #calculate simpsons
 colnames(marshdiv)<-c("Simpsons","Month","Site") #rename columns
 
 
-summary(aov(marshdiv$Simpsons~marshdiv$Month)) #anova among regions
+#summary(aov(marshdiv$Simpsons~marshdiv$Month)) #anova among regions
+#summary(aov(marshdiv$Simpsons~marshdiv$Site)) #anova among regions
 
-summary(aov(marshdiv$Simpsons~marshdiv$Site)) #anova among regions
-
+summary(aov(marshdiv$Simpsons~marshdiv$Month*marshdiv$Site)) #two-way ANOVA
 
 #Margalef
 
-marshrich<-read.table("C:/Users/acahill/Desktop/morphomarshrich.txt",header=T)
+marshrich<-read.table("C:/Users/aecsk/Desktop/morphomarshrich.txt",header=T)
 
-summary(aov(marshrich$Richness~marshrich$Month))
-summary(aov(marshrich$Richness~marshrich$Site))
+#summary(aov(marshrich$Richness~marshrich$Month))
+#summary(aov(marshrich$Richness~marshrich$Site))
+
+summary(aov(marshrich$Richness~marshrich$Month*marshrich$Site))
 
 
-ggplot(marshrich,aes(x=Month,y=Richness,fill=Month))+
+marshrichtime<-ggplot(marshrich,aes(x=Month,y=Richness,fill=Month))+
+  geom_boxplot()+ 
+  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  theme_bw()+
+  annotate("text", x = 1, y = 7.5, label = "a", size = 4.5)+
+  annotate("text", x = 2, y = 10.5, label = "a", size = 4.5)+
+  annotate("text", x = 3, y = 5, label = "b", size = 4.5)+
+  theme(axis.title.x = element_text(size=16), # remove x-axis labels
+        axis.title.y = element_text(size=16), # remove y-axis labels
+        panel.background = element_blank(), 
+        panel.grid.major = element_blank(),  #remove major-grid labels
+        panel.grid.minor = element_blank(),  #remove minor-grid labels
+        plot.background = element_blank())
+  
+  
+
+marshrichsite<-ggplot(marshrich,aes(x=Site,y=Richness,fill=Site))+
   geom_boxplot()+ 
   scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   theme_bw()+
@@ -137,7 +160,8 @@ ggplot(marshrich,aes(x=Month,y=Richness,fill=Month))+
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())
 
-ggplot(marshrich,aes(x=Site,y=Richness,fill=Site))+
+
+marshdivtime<-ggplot(marshdiv,aes(x=Month,y=Simpsons,fill=Month))+
   geom_boxplot()+ 
   scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   theme_bw()+
@@ -148,8 +172,7 @@ ggplot(marshrich,aes(x=Site,y=Richness,fill=Site))+
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())
 
-
-ggplot(marshdiv,aes(x=Month,y=Simpsons,fill=Month))+
+marshdivsite<-ggplot(marshdiv,aes(x=Site,y=Simpsons,fill=Site))+
   geom_boxplot()+ 
   scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   theme_bw()+
@@ -160,13 +183,4 @@ ggplot(marshdiv,aes(x=Month,y=Simpsons,fill=Month))+
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())
 
-ggplot(marshdiv,aes(x=Site,y=Simpsons,fill=Site))+
-  geom_boxplot()+ 
-  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
-  theme_bw()+
-  theme(axis.title.x = element_text(size=16), # remove x-axis labels
-        axis.title.y = element_text(size=16), # remove y-axis labels
-        panel.background = element_blank(), 
-        panel.grid.major = element_blank(),  #remove major-grid labels
-        panel.grid.minor = element_blank(),  #remove minor-grid labels
-        plot.background = element_blank())
+plot_grid(marshrichsite,marshrichtime,marshdivsite,marshdivtime,labels=c("A","B","C","D"),ncol=2)

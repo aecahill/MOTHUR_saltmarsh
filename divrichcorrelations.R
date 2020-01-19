@@ -1,14 +1,15 @@
 #code for correlations and scatter plots comparing morpho and molecular data
 
-divcor<-read.table("C:/Users/acahill/Desktop/divcor.txt",header=TRUE)
-richcor<-read.table("C:/Users/acahill/Desktop/richnesscor.txt",header=TRUE)
+divcor<-read.table("C:/Users/aecsk/Desktop/divcor.txt",header=TRUE)
+richcor<-read.table("C:/Users/aecsk/Desktop/richnesscor.txt",header=TRUE)
 
 cor.test(divcor$Simpsons_morpho,divcor$Simpsons_molecular)
 cor.test(richcor$Richness_morpho,richcor$Richness_molecular)
 
 library(ggplot2)
+library(cowplot)
 
-ggplot(divcor,aes(Simpsons_morpho,Simpsons_molecular))+
+divplot<-ggplot(divcor,aes(Simpsons_morpho,Simpsons_molecular))+
   geom_point(size = 4)+
   geom_smooth(method="lm",formula=y~x)+
   theme_bw()+
@@ -23,7 +24,7 @@ ggplot(divcor,aes(Simpsons_morpho,Simpsons_molecular))+
   theme(axis.title.y=element_text(size=16))+
   xlab("\nMorphological Diversity")+ylab("Molecular Diversity\n")
 
-ggplot(richcor,aes(Richness_morpho,Richness_molecular))+
+richplot<-ggplot(richcor,aes(Richness_morpho,Richness_molecular))+
   geom_point(size = 4)+
   geom_smooth(method="lm",formula=y~x)+
   theme_bw()+
@@ -37,3 +38,5 @@ ggplot(richcor,aes(Richness_morpho,Richness_molecular))+
   theme(axis.title.x=element_text(size=16))+
   theme(axis.title.y=element_text(size=16))+
   xlab("\nMorphological Richness")+ylab("Molecular Richness\n")
+
+plot_grid(divplot,richplot,labels=c("A","B"))

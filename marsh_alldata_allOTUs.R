@@ -1,9 +1,9 @@
-marshotu<-read.table("C:/Users/acahill/Desktop/allmarshallOTU.txt",header=TRUE)
-rich<-read.table("C:/Users/acahill/Desktop/marshrichness.txt",header=TRUE)
+marshotu<-read.table("C:/Users/aecsk/Desktop/allmarshallOTU.txt",header=TRUE)
+rich<-read.table("C:/Users/aecsk/Desktop/marshrichness.txt",header=TRUE)
 colnames(rich)<-c("Month","Site","Rep","Richness","Rich_reduced")
 
 otu2<-t(marshotu)
-sites<-read.table("C:/Users/acahill/Desktop/allmarshsites.txt",header=TRUE)
+sites<-read.table("C:/Users/aecsk/Desktop/allmarshsites.txt",header=TRUE)
 
 
 #load vegan
@@ -64,7 +64,7 @@ hull.data<-cbind(hull.data,hull.sample) #attach group names to hull dataframe
 
 #plot in ggplot
 
-ggplot() +
+moldatasite<-ggplot() +
   geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Point),size=5) + # add the point markers
   scale_colour_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   coord_equal() +
@@ -97,7 +97,7 @@ hull.data<-cbind(hull.data,hull.sample) #attach group names to hull dataframe
 
 #plot in ggplot
 
-ggplot() +
+moldatatime<-ggplot() +
   geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Month),size=5) + # add the point markers
   scale_colour_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   coord_equal() +
@@ -113,24 +113,32 @@ ggplot() +
         plot.background = element_blank())+ 
   geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.sample),alpha=0.20) #add polygon based on the hulls calculated
 
+library(cowplot)
+
+plot_grid(moldatasite,moldatatime,labels=c("A","B"),ncol=1)
+
+
 #Diversity indices
 allmarshdiv<-cbind(diversity(marsh4,index="simpson"),sites) #calculate simpsons index, bind to site information
 
 colnames(allmarshdiv)<-c("Simpsons","Month","Site","Rep") #rename columns
 
-summary(aov(allmarshdiv$Simpsons~allmarshdiv$Month))
-
-summary(aov(allmarshdiv$Simpsons~allmarshdiv$Site))
+#summary(aov(allmarshdiv$Simpsons~allmarshdiv$Month))
+#summary(aov(allmarshdiv$Simpsons~allmarshdiv$Site))
 #TukeyHSD(aov(allmarshdiv$simpsons~allmarshdiv$Point))
+
+summary(aov(allmarshdiv$Simpsons~allmarshdiv$Month*allmarshdiv$Site))
 
 
 #Richness
-summary(aov(rich$Richness~rich$Month))
-summary(aov(rich$Richness~rich$Site))
+#summary(aov(rich$Richness~rich$Month))
+#summary(aov(rich$Richness~rich$Site))
+
+summary(aov(rich$Richness~rich$Month*rich$Site))
 
 TukeyHSD(aov(rich$Richness~rich$Site))
 
-ggplot(rich,aes(x=Month,y=Richness,fill=Month))+
+molrichtime<-ggplot(rich,aes(x=Month,y=Richness,fill=Month))+
   geom_boxplot()+ 
   scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   theme_bw()+
@@ -141,7 +149,26 @@ ggplot(rich,aes(x=Month,y=Richness,fill=Month))+
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())
 
-ggplot(rich,aes(x=Site,y=Richness,fill=Site))+
+molrichsite<-ggplot(rich,aes(x=Site,y=Richness,fill=Site))+
+  geom_boxplot()+ 
+  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  theme_bw()+
+  annotate("text", x = 1, y = 51, label = "a", size = 4.5)+
+  annotate("text", x = 2, y = 75, label = "bc", size = 4.5)+
+  annotate("text", x = 3, y = 90, label = "bc", size = 4.5)+
+  annotate("text", x = 4, y = 95, label = "c", size = 4.5)+
+  annotate("text", x = 5, y = 83, label = "bc", size = 4.5)+
+  annotate("text", x = 6, y = 75, label = "bc", size = 4.5)+
+  annotate("text", x = 7, y = 75, label = "b", size = 4.5)+
+    theme(axis.title.x = element_text(size=16), # remove x-axis labels
+        axis.title.y = element_text(size=16), # remove y-axis labels
+        panel.background = element_blank(), 
+        panel.grid.major = element_blank(),  #remove major-grid labels
+        panel.grid.minor = element_blank(),  #remove minor-grid labels
+        plot.background = element_blank())
+
+
+moldivtime<-ggplot(allmarshdiv,aes(x=Month,y=Simpsons,fill=Month))+
   geom_boxplot()+ 
   scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   theme_bw()+
@@ -152,8 +179,7 @@ ggplot(rich,aes(x=Site,y=Richness,fill=Site))+
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())
 
-
-ggplot(allmarshdiv,aes(x=Month,y=Simpsons,fill=Month))+
+moldivsite<-ggplot(allmarshdiv,aes(x=Site,y=Simpsons,fill=Site))+
   geom_boxplot()+ 
   scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
   theme_bw()+
@@ -164,13 +190,4 @@ ggplot(allmarshdiv,aes(x=Month,y=Simpsons,fill=Month))+
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())
 
-ggplot(allmarshdiv,aes(x=Site,y=Simpsons,fill=Site))+
-  geom_boxplot()+ 
-  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
-  theme_bw()+
-  theme(axis.title.x = element_text(size=16), # remove x-axis labels
-        axis.title.y = element_text(size=16), # remove y-axis labels
-        panel.background = element_blank(), 
-        panel.grid.major = element_blank(),  #remove major-grid labels
-        panel.grid.minor = element_blank(),  #remove minor-grid labels
-        plot.background = element_blank())
+plot_grid(molrichsite,molrichtime,moldivsite,moldivtime,labels=c("A","B","C","D"),ncol=2)
