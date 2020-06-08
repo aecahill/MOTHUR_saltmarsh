@@ -1,8 +1,8 @@
-marshreducedotu<-read.table("C:/Users/acahill/Desktop/allmarshreducedOTU.txt",header=TRUE)
+marshreducedotu<-read.table("C:/Users/aecsk/Desktop/allmarshreducedOTU.txt",header=TRUE)
 rich<-read.table("C:/Users/acahill/Desktop/marshrichness.txt",header=TRUE)
 
 otu2<-t(marshreducedotu)
-sites<-read.table("C:/Users/acahill/Desktop/allmarshsites.txt",header=TRUE)
+sites<-read.table("C:/Users/aecsk/Desktop/allmarshsites.txt",header=TRUE)
 
 
 #load vegan
@@ -59,7 +59,7 @@ grp.g <- data.scores[datascores$Point == "G", ][chull(datascores[datascores$Poin
                                                                    "G", c("NMDS1", "NMDS2")]), ]
 
 hull.data <- rbind(grp.a, grp.b, grp.c, grp.d,grp.e, grp.f, grp.g) #turn the hulls into a single dataframe
-hull.sample<-c("A","A","A","A","A","B","B","B","B","B","B","B","C","C","C","C","D","D","D","D","D","E","E","E","E","F","F","F","F","F","G","G","G","G","G","G") #add column for groups (these are based on this data only)
+hull.sample<-c("A","A","A","A","A","B","B","B","B","B","B","B","C","C","C","C","D","D","D","D","D","E","E","E","E","E","F","F","F","F","F","F","G","G","G","G","G","G") #add column for groups (these are based on this data only)
 hull.data<-cbind(hull.data,hull.sample) #attach group names to hull dataframe
 
 #plot in ggplot
@@ -122,7 +122,7 @@ colnames(allmarshdiv)<-c("simpsons","Month","Point","Rep") #rename columns
 
 summary(aov(allmarshdiv$simpsons~allmarshdiv$Month))
 
-summary(aov(allmarshdiv$simpsons~allmarshdiv$Point))
+summary(aov(allmarshdiv$simpsons~allmarshdiv$Point*allmarshdiv))
 TukeyHSD(aov(allmarshdiv$simpsons~allmarshdiv$Point))
 
 
@@ -131,3 +131,4 @@ summary(aov(rich$Rich_reduced~rich$Month))
 summary(aov(rich$Rich_reduced~rich$Point))
 
 TukeyHSD(aov(rich$Rich_reduced~rich$Point))
+
