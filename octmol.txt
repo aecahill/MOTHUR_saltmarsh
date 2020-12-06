@@ -1,190 +1,190 @@
-Month	Site	Replicate	Taxon	Count
-Oct	A	1	Insecta	845
-Oct	A	1	Arthropoda	562
-Oct	A	1	Clitellata	0
-Oct	A	1	Arachnida	0
-Oct	A	1	Hydrozoa	0
-Oct	A	1	Bdelloidea	0
-Oct	A	1	Gastropoda	0
-Oct	A	1	Monogononta	11
-Oct	A	1	Ostracoda	23
-Oct	A	2	Insecta	3683
-Oct	A	2	Arthropoda	1076
-Oct	A	2	Clitellata	0
-Oct	A	2	Arachnida	15
-Oct	A	2	Hydrozoa	0
-Oct	A	2	Bdelloidea	0
-Oct	A	2	Gastropoda	43
-Oct	A	2	Monogononta	9
-Oct	A	2	Ostracoda	118
-Oct	A	3	Insecta	3665
-Oct	A	3	Arthropoda	1463
-Oct	A	3	Clitellata	0
-Oct	A	3	Arachnida	24
-Oct	A	3	Hydrozoa	0
-Oct	A	3	Bdelloidea	0
-Oct	A	3	Gastropoda	106
-Oct	A	3	Monogononta	8
-Oct	A	3	Ostracoda	280
-Oct	B	1	Insecta	2043
-Oct	B	1	Arthropoda	708
-Oct	B	1	Clitellata	0
-Oct	B	1	Arachnida	59
-Oct	B	1	Hydrozoa	0
-Oct	B	1	Bdelloidea	0
-Oct	B	1	Gastropoda	0
-Oct	B	1	Monogononta	0
-Oct	B	1	Ostracoda	0
-Oct	B	2	Insecta	5809
-Oct	B	2	Arthropoda	789
-Oct	B	2	Clitellata	0
-Oct	B	2	Arachnida	113
-Oct	B	2	Hydrozoa	73
-Oct	B	2	Bdelloidea	0
-Oct	B	2	Gastropoda	14
-Oct	B	2	Monogononta	0
-Oct	B	2	Ostracoda	33
-Oct	B	3	Insecta	5144
-Oct	B	3	Arthropoda	1422
-Oct	B	3	Clitellata	0
-Oct	B	3	Arachnida	80
-Oct	B	3	Hydrozoa	0
-Oct	B	3	Bdelloidea	0
-Oct	B	3	Gastropoda	40
-Oct	B	3	Monogononta	14
-Oct	B	3	Ostracoda	0
-Oct	C	1	Insecta	3871
-Oct	C	1	Arthropoda	1981
-Oct	C	1	Clitellata	369
-Oct	C	1	Arachnida	208
-Oct	C	1	Hydrozoa	196
-Oct	C	1	Bdelloidea	0
-Oct	C	1	Gastropoda	400
-Oct	C	1	Monogononta	34
-Oct	C	1	Ostracoda	0
-Oct	C	2	Insecta	14769
-Oct	C	2	Arthropoda	2949
-Oct	C	2	Clitellata	508
-Oct	C	2	Arachnida	6
-Oct	C	2	Hydrozoa	2
-Oct	C	2	Bdelloidea	0
-Oct	C	2	Gastropoda	0
-Oct	C	2	Monogononta	0
-Oct	C	2	Ostracoda	14
-Oct	C	3	Insecta	3185
-Oct	C	3	Arthropoda	991
-Oct	C	3	Clitellata	24
-Oct	C	3	Arachnida	1
-Oct	C	3	Hydrozoa	0
-Oct	C	3	Bdelloidea	0
-Oct	C	3	Gastropoda	29
-Oct	C	3	Monogononta	7
-Oct	C	3	Ostracoda	18
-Oct	D	1	Insecta	2943
-Oct	D	1	Arthropoda	1224
-Oct	D	1	Clitellata	554
-Oct	D	1	Arachnida	353
-Oct	D	1	Hydrozoa	0
-Oct	D	1	Bdelloidea	44
-Oct	D	1	Gastropoda	0
-Oct	D	1	Monogononta	0
-Oct	D	1	Ostracoda	0
-Oct	D	2	Insecta	4383
-Oct	D	2	Arthropoda	1359
-Oct	D	2	Clitellata	5229
-Oct	D	2	Arachnida	172
-Oct	D	2	Hydrozoa	14
-Oct	D	2	Bdelloidea	29
-Oct	D	2	Gastropoda	15
-Oct	D	2	Monogononta	0
-Oct	D	2	Ostracoda	0
-Oct	D	3	Insecta	1637
-Oct	D	3	Arthropoda	946
-Oct	D	3	Clitellata	333
-Oct	D	3	Arachnida	123
-Oct	D	3	Hydrozoa	24
-Oct	D	3	Bdelloidea	34
-Oct	D	3	Gastropoda	0
-Oct	D	3	Monogononta	0
-Oct	D	3	Ostracoda	0
-Oct	E	1	Insecta	3414
-Oct	E	1	Arthropoda	1629
-Oct	E	1	Clitellata	30
-Oct	E	1	Arachnida	113
-Oct	E	1	Hydrozoa	14
-Oct	E	1	Bdelloidea	0
-Oct	E	1	Gastropoda	4
-Oct	E	1	Monogononta	9
-Oct	E	1	Ostracoda	228
-Oct	E	2	Insecta	8864
-Oct	E	2	Arthropoda	1200
-Oct	E	2	Clitellata	90
-Oct	E	2	Arachnida	70
-Oct	E	2	Hydrozoa	0
-Oct	E	2	Bdelloidea	0
-Oct	E	2	Gastropoda	0
-Oct	E	2	Monogononta	5
-Oct	E	2	Ostracoda	0
-Oct	E	3	Insecta	7802
-Oct	E	3	Arthropoda	1812
-Oct	E	3	Clitellata	20
-Oct	E	3	Arachnida	79
-Oct	E	3	Hydrozoa	8
-Oct	E	3	Bdelloidea	12
-Oct	E	3	Gastropoda	0
-Oct	E	3	Monogononta	15
-Oct	E	3	Ostracoda	0
-Oct	F	1	Insecta	2675
-Oct	F	1	Arthropoda	1501
-Oct	F	1	Clitellata	64
-Oct	F	1	Arachnida	90
-Oct	F	1	Hydrozoa	77
-Oct	F	1	Bdelloidea	0
-Oct	F	1	Gastropoda	24
-Oct	F	1	Monogononta	0
-Oct	F	1	Ostracoda	0
-Oct	F	2	Insecta	7270
-Oct	F	2	Arthropoda	775
-Oct	F	2	Clitellata	49
-Oct	F	2	Arachnida	125
-Oct	F	2	Hydrozoa	0
-Oct	F	2	Bdelloidea	0
-Oct	F	2	Gastropoda	17
-Oct	F	2	Monogononta	1
-Oct	F	2	Ostracoda	59
-Oct	F	3	Insecta	4413
-Oct	F	3	Arthropoda	1840
-Oct	F	3	Clitellata	0
-Oct	F	3	Arachnida	49
-Oct	F	3	Hydrozoa	6
-Oct	F	3	Bdelloidea	0
-Oct	F	3	Gastropoda	0
-Oct	F	3	Monogononta	120
-Oct	F	3	Ostracoda	0
-Oct	G	1	Insecta	2773
-Oct	G	1	Arthropoda	1327
-Oct	G	1	Clitellata	32
-Oct	G	1	Arachnida	225
-Oct	G	1	Hydrozoa	0
-Oct	G	1	Bdelloidea	424
-Oct	G	1	Gastropoda	35
-Oct	G	1	Monogononta	0
-Oct	G	1	Ostracoda	0
-Oct	G	2	Insecta	1300
-Oct	G	2	Arthropoda	1729
-Oct	G	2	Clitellata	13
-Oct	G	2	Arachnida	207
-Oct	G	2	Hydrozoa	41
-Oct	G	2	Bdelloidea	140
-Oct	G	2	Gastropoda	20
-Oct	G	2	Monogononta	15
-Oct	G	2	Ostracoda	0
-Oct	G	3	Insecta	2080
-Oct	G	3	Arthropoda	2873
-Oct	G	3	Clitellata	0
-Oct	G	3	Arachnida	160
-Oct	G	3	Hydrozoa	81
-Oct	G	3	Bdelloidea	26
-Oct	G	3	Gastropoda	0
-Oct	G	3	Monogononta	0
-Oct	G	3	Ostracoda	0
+Month	Site	Replicate	Taxon	Count	Percent
+Oct	A	1	Insecta	845	0.070823904
+Oct	A	1	Arthropoda	562	0.047104182
+Oct	A	1	Clitellata	0	0
+Oct	A	1	Arachnida	0	0
+Oct	A	1	Hydrozoa	0	0
+Oct	A	1	Bdelloidea	0	0
+Oct	A	1	Gastropoda	0	0
+Oct	A	1	Monogononta	11	0.000921968
+Oct	A	1	Ostracoda	23	0.001927751
+Oct	A	2	Insecta	3683	0.308691644
+Oct	A	2	Arthropoda	1076	0.090185232
+Oct	A	2	Clitellata	0	0
+Oct	A	2	Arachnida	15	0.001257229
+Oct	A	2	Hydrozoa	0	0
+Oct	A	2	Bdelloidea	0	0
+Oct	A	2	Gastropoda	43	0.003604057
+Oct	A	2	Monogononta	9	0.000754337
+Oct	A	2	Ostracoda	118	0.009890202
+Oct	A	3	Insecta	3665	0.307182969
+Oct	A	3	Arthropoda	1463	0.122621742
+Oct	A	3	Clitellata	0	0
+Oct	A	3	Arachnida	24	0.002011567
+Oct	A	3	Hydrozoa	0	0
+Oct	A	3	Bdelloidea	0	0
+Oct	A	3	Gastropoda	106	0.008884419
+Oct	A	3	Monogononta	8	0.000670522
+Oct	A	3	Ostracoda	280	0.023468276
+Oct	B	1	Insecta	2043	0.125022948
+Oct	B	1	Arthropoda	708	0.043326602
+Oct	B	1	Clitellata	0	0
+Oct	B	1	Arachnida	59	0.00361055
+Oct	B	1	Hydrozoa	0	0
+Oct	B	1	Bdelloidea	0	0
+Oct	B	1	Gastropoda	0	0
+Oct	B	1	Monogononta	0	0
+Oct	B	1	Ostracoda	0	0
+Oct	B	2	Insecta	5809	0.3554862
+Oct	B	2	Arthropoda	789	0.048283459
+Oct	B	2	Clitellata	0	0
+Oct	B	2	Arachnida	113	0.006915121
+Oct	B	2	Hydrozoa	73	0.004467291
+Oct	B	2	Bdelloidea	0	0
+Oct	B	2	Gastropoda	14	0.000856741
+Oct	B	2	Monogononta	0	0
+Oct	B	2	Ostracoda	33	0.00201946
+Oct	B	3	Insecta	5144	0.314791016
+Oct	B	3	Arthropoda	1422	0.087020378
+Oct	B	3	Clitellata	0	0
+Oct	B	3	Arachnida	80	0.004895661
+Oct	B	3	Hydrozoa	0	0
+Oct	B	3	Bdelloidea	0	0
+Oct	B	3	Gastropoda	40	0.002447831
+Oct	B	3	Monogononta	14	0.000856741
+Oct	B	3	Ostracoda	0	0
+Oct	C	1	Insecta	3871	0.130945132
+Oct	C	1	Arthropoda	1981	0.067011704
+Oct	C	1	Clitellata	369	0.012482241
+Oct	C	1	Arachnida	208	0.00703606
+Oct	C	1	Hydrozoa	196	0.006630133
+Oct	C	1	Bdelloidea	0	0
+Oct	C	1	Gastropoda	400	0.013530884
+Oct	C	1	Monogononta	34	0.001150125
+Oct	C	1	Ostracoda	0	0
+Oct	C	2	Insecta	14769	0.499594073
+Oct	C	2	Arthropoda	2949	0.099756444
+Oct	C	2	Clitellata	508	0.017184223
+Oct	C	2	Arachnida	6	0.000202963
+Oct	C	2	Hydrozoa	2	6.76544E-05
+Oct	C	2	Bdelloidea	0	0
+Oct	C	2	Gastropoda	0	0
+Oct	C	2	Monogononta	0	0
+Oct	C	2	Ostracoda	14	0.000473581
+Oct	C	3	Insecta	3185	0.107739666
+Oct	C	3	Arthropoda	991	0.033522766
+Oct	C	3	Clitellata	24	0.000811853
+Oct	C	3	Arachnida	1	3.38272E-05
+Oct	C	3	Hydrozoa	0	0
+Oct	C	3	Bdelloidea	0	0
+Oct	C	3	Gastropoda	29	0.000980989
+Oct	C	3	Monogononta	7	0.00023679
+Oct	C	3	Ostracoda	18	0.00060889
+Oct	D	1	Insecta	2943	0.15157602
+Oct	D	1	Arthropoda	1224	0.063040791
+Oct	D	1	Clitellata	554	0.028533169
+Oct	D	1	Arachnida	353	0.018180882
+Oct	D	1	Hydrozoa	0	0
+Oct	D	1	Bdelloidea	44	0.002266172
+Oct	D	1	Gastropoda	0	0
+Oct	D	1	Monogononta	0	0
+Oct	D	1	Ostracoda	0	0
+Oct	D	2	Insecta	4383	0.225741656
+Oct	D	2	Arthropoda	1359	0.06999382
+Oct	D	2	Clitellata	5229	0.269313968
+Oct	D	2	Arachnida	172	0.008858673
+Oct	D	2	Hydrozoa	14	0.000721055
+Oct	D	2	Bdelloidea	29	0.001493614
+Oct	D	2	Gastropoda	15	0.000772559
+Oct	D	2	Monogononta	0	0
+Oct	D	2	Ostracoda	0	0
+Oct	D	3	Insecta	1637	0.084311908
+Oct	D	3	Arthropoda	946	0.048722703
+Oct	D	3	Clitellata	333	0.017150803
+Oct	D	3	Arachnida	123	0.006334981
+Oct	D	3	Hydrozoa	24	0.001236094
+Oct	D	3	Bdelloidea	34	0.001751133
+Oct	D	3	Gastropoda	0	0
+Oct	D	3	Monogononta	0	0
+Oct	D	3	Ostracoda	0	0
+Oct	E	1	Insecta	3414	0.134314265
+Oct	E	1	Arthropoda	1629	0.064088441
+Oct	E	1	Clitellata	30	0.001180266
+Oct	E	1	Arachnida	113	0.004445668
+Oct	E	1	Hydrozoa	14	0.000550791
+Oct	E	1	Bdelloidea	0	0
+Oct	E	1	Gastropoda	4	0.000157369
+Oct	E	1	Monogononta	9	0.00035408
+Oct	E	1	Ostracoda	228	0.008970021
+Oct	E	2	Insecta	8864	0.348729247
+Oct	E	2	Arthropoda	1200	0.047210638
+Oct	E	2	Clitellata	90	0.003540798
+Oct	E	2	Arachnida	70	0.002753954
+Oct	E	2	Hydrozoa	0	0
+Oct	E	2	Bdelloidea	0	0
+Oct	E	2	Gastropoda	0	0
+Oct	E	2	Monogononta	5	0.000196711
+Oct	E	2	Ostracoda	0	0
+Oct	E	3	Insecta	7802	0.306947832
+Oct	E	3	Arthropoda	1812	0.071288064
+Oct	E	3	Clitellata	20	0.000786844
+Oct	E	3	Arachnida	79	0.003108034
+Oct	E	3	Hydrozoa	8	0.000314738
+Oct	E	3	Bdelloidea	12	0.000472106
+Oct	E	3	Gastropoda	0	0
+Oct	E	3	Monogononta	15	0.000590133
+Oct	E	3	Ostracoda	0	0
+Oct	F	1	Insecta	2675	0.139650222
+Oct	F	1	Arthropoda	1501	0.078360741
+Oct	F	1	Clitellata	64	0.003341164
+Oct	F	1	Arachnida	90	0.004698512
+Oct	F	1	Hydrozoa	77	0.004019838
+Oct	F	1	Bdelloidea	0	0
+Oct	F	1	Gastropoda	24	0.001252937
+Oct	F	1	Monogononta	0	0
+Oct	F	1	Ostracoda	0	0
+Oct	F	2	Insecta	7270	0.379535369
+Oct	F	2	Arthropoda	775	0.04045941
+Oct	F	2	Clitellata	49	0.002558079
+Oct	F	2	Arachnida	125	0.006525711
+Oct	F	2	Hydrozoa	0	0
+Oct	F	2	Bdelloidea	0	0
+Oct	F	2	Gastropoda	17	0.000887497
+Oct	F	2	Monogononta	1	5.22057E-05
+Oct	F	2	Ostracoda	59	0.003080136
+Oct	F	3	Insecta	4413	0.230383712
+Oct	F	3	Arthropoda	1840	0.09605847
+Oct	F	3	Clitellata	0	0
+Oct	F	3	Arachnida	49	0.002558079
+Oct	F	3	Hydrozoa	6	0.000313234
+Oct	F	3	Bdelloidea	0	0
+Oct	F	3	Gastropoda	0	0
+Oct	F	3	Monogononta	120	0.006264683
+Oct	F	3	Ostracoda	0	0
+Oct	G	1	Insecta	2773	0.205392193
+Oct	G	1	Arthropoda	1327	0.098289016
+Oct	G	1	Clitellata	32	0.002370195
+Oct	G	1	Arachnida	225	0.016665432
+Oct	G	1	Hydrozoa	0	0
+Oct	G	1	Bdelloidea	424	0.031405081
+Oct	G	1	Gastropoda	35	0.002592401
+Oct	G	1	Monogononta	0	0
+Oct	G	1	Ostracoda	0	0
+Oct	G	2	Insecta	1300	0.096289164
+Oct	G	2	Arthropoda	1729	0.128064588
+Oct	G	2	Clitellata	13	0.000962892
+Oct	G	2	Arachnida	207	0.015332198
+Oct	G	2	Hydrozoa	41	0.003036812
+Oct	G	2	Bdelloidea	140	0.010369602
+Oct	G	2	Gastropoda	20	0.001481372
+Oct	G	2	Monogononta	15	0.001111029
+Oct	G	2	Ostracoda	0	0
+Oct	G	3	Insecta	2080	0.154062662
+Oct	G	3	Arthropoda	2873	0.212799052
+Oct	G	3	Clitellata	0	0
+Oct	G	3	Arachnida	160	0.011850974
+Oct	G	3	Hydrozoa	81	0.005999556
+Oct	G	3	Bdelloidea	26	0.001925783
+Oct	G	3	Gastropoda	0	0
+Oct	G	3	Monogononta	0	0
+Oct	G	3	Ostracoda	0	0

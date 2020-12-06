@@ -1,190 +1,190 @@
-Month	Site	Replicate	Taxon	Count
-October	A	1	Lepidoptera	38
-October	A	1	Dasyhelea	251
-October	A	1	Odonata	0
-October	A	1	Ceratopogonidae	0
-October	A	1	Diptera	0
-October	A	1	Coleoptera	0
-October	A	1	Orthoptera	0
-October	A	1	Culicoides	0
-October	A	1	Chironomidae	0
-October	A	2	Lepidoptera	31
-October	A	2	Dasyhelea	1698
-October	A	2	Odonata	0
-October	A	2	Ceratopogonidae	0
-October	A	2	Diptera	286
-October	A	2	Coleoptera	40
-October	A	2	Orthoptera	0
-October	A	2	Culicoides	0
-October	A	2	Chironomidae	0
-October	A	3	Lepidoptera	85
-October	A	3	Dasyhelea	2268
-October	A	3	Odonata	0
-October	A	3	Ceratopogonidae	0
-October	A	3	Diptera	64
-October	A	3	Coleoptera	90
-October	A	3	Orthoptera	0
-October	A	3	Culicoides	55
-October	A	3	Chironomidae	0
-October	B	1	Lepidoptera	192
-October	B	1	Dasyhelea	3
-October	B	1	Odonata	0
-October	B	1	Ceratopogonidae	0
-October	B	1	Diptera	10
-October	B	1	Coleoptera	0
-October	B	1	Orthoptera	0
-October	B	1	Culicoides	0
-October	B	1	Chironomidae	0
-October	B	2	Lepidoptera	1493
-October	B	2	Dasyhelea	0
-October	B	2	Odonata	0
-October	B	2	Ceratopogonidae	26
-October	B	2	Diptera	0
-October	B	2	Coleoptera	0
-October	B	2	Orthoptera	0
-October	B	2	Culicoides	0
-October	B	2	Chironomidae	0
-October	B	3	Lepidoptera	1619
-October	B	3	Dasyhelea	0
-October	B	3	Odonata	0
-October	B	3	Ceratopogonidae	0
-October	B	3	Diptera	108
-October	B	3	Coleoptera	0
-October	B	3	Orthoptera	0
-October	B	3	Culicoides	0
-October	B	3	Chironomidae	0
-October	C	1	Lepidoptera	323
-October	C	1	Dasyhelea	0
-October	C	1	Odonata	0
-October	C	1	Ceratopogonidae	0
-October	C	1	Diptera	49
-October	C	1	Coleoptera	0
-October	C	1	Orthoptera	0
-October	C	1	Culicoides	0
-October	C	1	Chironomidae	0
-October	C	2	Lepidoptera	101
-October	C	2	Dasyhelea	70
-October	C	2	Odonata	0
-October	C	2	Ceratopogonidae	1210
-October	C	2	Diptera	1861
-October	C	2	Coleoptera	0
-October	C	2	Orthoptera	0
-October	C	2	Culicoides	0
-October	C	2	Chironomidae	931
-October	C	3	Lepidoptera	813
-October	C	3	Dasyhelea	0
-October	C	3	Odonata	0
-October	C	3	Ceratopogonidae	419
-October	C	3	Diptera	137
-October	C	3	Coleoptera	2
-October	C	3	Orthoptera	0
-October	C	3	Culicoides	0
-October	C	3	Chironomidae	0
-October	D	1	Lepidoptera	298
-October	D	1	Dasyhelea	0
-October	D	1	Odonata	0
-October	D	1	Ceratopogonidae	0
-October	D	1	Diptera	10
-October	D	1	Coleoptera	0
-October	D	1	Orthoptera	0
-October	D	1	Culicoides	0
-October	D	1	Chironomidae	0
-October	D	2	Lepidoptera	211
-October	D	2	Dasyhelea	0
-October	D	2	Odonata	0
-October	D	2	Ceratopogonidae	686
-October	D	2	Diptera	47
-October	D	2	Coleoptera	0
-October	D	2	Orthoptera	0
-October	D	2	Culicoides	23
-October	D	2	Chironomidae	238
-October	D	3	Lepidoptera	139
-October	D	3	Dasyhelea	0
-October	D	3	Odonata	0
-October	D	3	Ceratopogonidae	64
-October	D	3	Diptera	30
-October	D	3	Coleoptera	0
-October	D	3	Orthoptera	0
-October	D	3	Culicoides	0
-October	D	3	Chironomidae	17
-October	E	1	Lepidoptera	238
-October	E	1	Dasyhelea	0
-October	E	1	Odonata	0
-October	E	1	Ceratopogonidae	0
-October	E	1	Diptera	9
-October	E	1	Coleoptera	0
-October	E	1	Orthoptera	0
-October	E	1	Culicoides	0
-October	E	1	Chironomidae	0
-October	E	2	Lepidoptera	2047
-October	E	2	Dasyhelea	293
-October	E	2	Odonata	0
-October	E	2	Ceratopogonidae	1367
-October	E	2	Diptera	0
-October	E	2	Coleoptera	0
-October	E	2	Orthoptera	0
-October	E	2	Culicoides	0
-October	E	2	Chironomidae	229
-October	E	3	Lepidoptera	3132
-October	E	3	Dasyhelea	141
-October	E	3	Odonata	0
-October	E	3	Ceratopogonidae	204
-October	E	3	Diptera	0
-October	E	3	Coleoptera	0
-October	E	3	Orthoptera	0
-October	E	3	Culicoides	72
-October	E	3	Chironomidae	57
-October	F	1	Lepidoptera	47
-October	F	1	Dasyhelea	0
-October	F	1	Odonata	0
-October	F	1	Ceratopogonidae	11
-October	F	1	Diptera	5
-October	F	1	Coleoptera	0
-October	F	1	Orthoptera	0
-October	F	1	Culicoides	0
-October	F	1	Chironomidae	0
-October	F	2	Lepidoptera	2802
-October	F	2	Dasyhelea	0
-October	F	2	Odonata	0
-October	F	2	Ceratopogonidae	665
-October	F	2	Diptera	54
-October	F	2	Coleoptera	0
-October	F	2	Orthoptera	0
-October	F	2	Culicoides	0
-October	F	2	Chironomidae	0
-October	F	3	Lepidoptera	760
-October	F	3	Dasyhelea	0
-October	F	3	Odonata	0
-October	F	3	Ceratopogonidae	0
-October	F	3	Diptera	18
-October	F	3	Coleoptera	0
-October	F	3	Orthoptera	0
-October	F	3	Culicoides	0
-October	F	3	Chironomidae	0
-October	G	1	Lepidoptera	98
-October	G	1	Dasyhelea	0
-October	G	1	Odonata	0
-October	G	1	Ceratopogonidae	0
-October	G	1	Diptera	0
-October	G	1	Coleoptera	0
-October	G	1	Orthoptera	0
-October	G	1	Culicoides	0
-October	G	1	Chironomidae	132
-October	G	2	Lepidoptera	207
-October	G	2	Dasyhelea	0
-October	G	2	Odonata	0
-October	G	2	Ceratopogonidae	0
-October	G	2	Diptera	41
-October	G	2	Coleoptera	0
-October	G	2	Orthoptera	0
-October	G	2	Culicoides	0
-October	G	2	Chironomidae	0
-October	G	3	Lepidoptera	190
-October	G	3	Dasyhelea	0
-October	G	3	Odonata	0
-October	G	3	Ceratopogonidae	0
-October	G	3	Diptera	0
-October	G	3	Coleoptera	11
-October	G	3	Orthoptera	0
-October	G	3	Culicoides	0
-October	G	3	Chironomidae	0
+Month	Site	Replicate	Taxon	Count	Percent
+October	A	1	Lepidoptera	38	0.007745618
+October	A	1	Dasyhelea	251	0.051161843
+October	A	1	Odonata	0	0
+October	A	1	Ceratopogonidae	0	0
+October	A	1	Diptera	0	0
+October	A	1	Coleoptera	0	0
+October	A	1	Orthoptera	0	0
+October	A	1	Culicoides	0	0
+October	A	1	Chironomidae	0	0
+October	A	2	Lepidoptera	31	0.006318793
+October	A	2	Dasyhelea	1698	0.346106808
+October	A	2	Odonata	0	0
+October	A	2	Ceratopogonidae	0	0
+October	A	2	Diptera	286	0.058295964
+October	A	2	Coleoptera	40	0.008153282
+October	A	2	Orthoptera	0	0
+October	A	2	Culicoides	0	0
+October	A	2	Chironomidae	0	0
+October	A	3	Lepidoptera	85	0.017325724
+October	A	3	Dasyhelea	2268	0.462291072
+October	A	3	Odonata	0	0
+October	A	3	Ceratopogonidae	0	0
+October	A	3	Diptera	64	0.013045251
+October	A	3	Coleoptera	90	0.018344884
+October	A	3	Orthoptera	0	0
+October	A	3	Culicoides	55	0.011210762
+October	A	3	Chironomidae	0	0
+October	B	1	Lepidoptera	192	0.055636048
+October	B	1	Dasyhelea	3	0.000869313
+October	B	1	Odonata	0	0
+October	B	1	Ceratopogonidae	0	0
+October	B	1	Diptera	10	0.002897711
+October	B	1	Coleoptera	0	0
+October	B	1	Orthoptera	0	0
+October	B	1	Culicoides	0	0
+October	B	1	Chironomidae	0	0
+October	B	2	Lepidoptera	1493	0.432628224
+October	B	2	Dasyhelea	0	0
+October	B	2	Odonata	0	0
+October	B	2	Ceratopogonidae	26	0.007534048
+October	B	2	Diptera	0	0
+October	B	2	Coleoptera	0	0
+October	B	2	Orthoptera	0	0
+October	B	2	Culicoides	0	0
+October	B	2	Chironomidae	0	0
+October	B	3	Lepidoptera	1619	0.46913938
+October	B	3	Dasyhelea	0	0
+October	B	3	Odonata	0	0
+October	B	3	Ceratopogonidae	0	0
+October	B	3	Diptera	108	0.031295277
+October	B	3	Coleoptera	0	0
+October	B	3	Orthoptera	0	0
+October	B	3	Culicoides	0	0
+October	B	3	Chironomidae	0	0
+October	C	1	Lepidoptera	323	0.054597701
+October	C	1	Dasyhelea	0	0
+October	C	1	Odonata	0	0
+October	C	1	Ceratopogonidae	0	0
+October	C	1	Diptera	49	0.008282623
+October	C	1	Coleoptera	0	0
+October	C	1	Orthoptera	0	0
+October	C	1	Culicoides	0	0
+October	C	1	Chironomidae	0	0
+October	C	2	Lepidoptera	101	0.017072346
+October	C	2	Dasyhelea	70	0.011832319
+October	C	2	Odonata	0	0
+October	C	2	Ceratopogonidae	1210	0.204530088
+October	C	2	Diptera	1861	0.314570656
+October	C	2	Coleoptera	0	0
+October	C	2	Orthoptera	0	0
+October	C	2	Culicoides	0	0
+October	C	2	Chironomidae	931	0.157369844
+October	C	3	Lepidoptera	813	0.137423935
+October	C	3	Dasyhelea	0	0
+October	C	3	Odonata	0	0
+October	C	3	Ceratopogonidae	419	0.070824882
+October	C	3	Diptera	137	0.023157539
+October	C	3	Coleoptera	2	0.000338066
+October	C	3	Orthoptera	0	0
+October	C	3	Culicoides	0	0
+October	C	3	Chironomidae	0	0
+October	D	1	Lepidoptera	298	0.169030062
+October	D	1	Dasyhelea	0	0
+October	D	1	Odonata	0	0
+October	D	1	Ceratopogonidae	0	0
+October	D	1	Diptera	10	0.00567215
+October	D	1	Coleoptera	0	0
+October	D	1	Orthoptera	0	0
+October	D	1	Culicoides	0	0
+October	D	1	Chironomidae	0	0
+October	D	2	Lepidoptera	211	0.11968236
+October	D	2	Dasyhelea	0	0
+October	D	2	Odonata	0	0
+October	D	2	Ceratopogonidae	686	0.389109472
+October	D	2	Diptera	47	0.026659104
+October	D	2	Coleoptera	0	0
+October	D	2	Orthoptera	0	0
+October	D	2	Culicoides	23	0.013045944
+October	D	2	Chironomidae	238	0.134997164
+October	D	3	Lepidoptera	139	0.078842881
+October	D	3	Dasyhelea	0	0
+October	D	3	Odonata	0	0
+October	D	3	Ceratopogonidae	64	0.036301758
+October	D	3	Diptera	30	0.017016449
+October	D	3	Coleoptera	0	0
+October	D	3	Orthoptera	0	0
+October	D	3	Culicoides	0	0
+October	D	3	Chironomidae	17	0.009642655
+October	E	1	Lepidoptera	238	0.030555912
+October	E	1	Dasyhelea	0	0
+October	E	1	Odonata	0	0
+October	E	1	Ceratopogonidae	0	0
+October	E	1	Diptera	9	0.001155476
+October	E	1	Coleoptera	0	0
+October	E	1	Orthoptera	0	0
+October	E	1	Culicoides	0	0
+October	E	1	Chironomidae	0	0
+October	E	2	Lepidoptera	2047	0.262806522
+October	E	2	Dasyhelea	293	0.037617152
+October	E	2	Odonata	0	0
+October	E	2	Ceratopogonidae	1367	0.175503916
+October	E	2	Diptera	0	0
+October	E	2	Coleoptera	0	0
+October	E	2	Orthoptera	0	0
+October	E	2	Culicoides	0	0
+October	E	2	Chironomidae	229	0.029400437
+October	E	3	Lepidoptera	3132	0.402105533
+October	E	3	Dasyhelea	141	0.018102452
+October	E	3	Odonata	0	0
+October	E	3	Ceratopogonidae	204	0.026190782
+October	E	3	Diptera	0	0
+October	E	3	Coleoptera	0	0
+October	E	3	Orthoptera	0	0
+October	E	3	Culicoides	72	0.009243805
+October	E	3	Chironomidae	57	0.007318013
+October	F	1	Lepidoptera	47	0.010774874
+October	F	1	Dasyhelea	0	0
+October	F	1	Odonata	0	0
+October	F	1	Ceratopogonidae	11	0.002521779
+October	F	1	Diptera	5	0.001146263
+October	F	1	Coleoptera	0	0
+October	F	1	Orthoptera	0	0
+October	F	1	Culicoides	0	0
+October	F	1	Chironomidae	0	0
+October	F	2	Lepidoptera	2802	0.642365887
+October	F	2	Dasyhelea	0	0
+October	F	2	Odonata	0	0
+October	F	2	Ceratopogonidae	665	0.152453003
+October	F	2	Diptera	54	0.012379642
+October	F	2	Coleoptera	0	0
+October	F	2	Orthoptera	0	0
+October	F	2	Culicoides	0	0
+October	F	2	Chironomidae	0	0
+October	F	3	Lepidoptera	760	0.174232004
+October	F	3	Dasyhelea	0	0
+October	F	3	Odonata	0	0
+October	F	3	Ceratopogonidae	0	0
+October	F	3	Diptera	18	0.004126547
+October	F	3	Coleoptera	0	0
+October	F	3	Orthoptera	0	0
+October	F	3	Culicoides	0	0
+October	F	3	Chironomidae	0	0
+October	G	1	Lepidoptera	98	0.144329897
+October	G	1	Dasyhelea	0	0
+October	G	1	Odonata	0	0
+October	G	1	Ceratopogonidae	0	0
+October	G	1	Diptera	0	0
+October	G	1	Coleoptera	0	0
+October	G	1	Orthoptera	0	0
+October	G	1	Culicoides	0	0
+October	G	1	Chironomidae	132	0.194403535
+October	G	2	Lepidoptera	207	0.304860088
+October	G	2	Dasyhelea	0	0
+October	G	2	Odonata	0	0
+October	G	2	Ceratopogonidae	0	0
+October	G	2	Diptera	41	0.060382916
+October	G	2	Coleoptera	0	0
+October	G	2	Orthoptera	0	0
+October	G	2	Culicoides	0	0
+October	G	2	Chironomidae	0	0
+October	G	3	Lepidoptera	190	0.27982327
+October	G	3	Dasyhelea	0	0
+October	G	3	Odonata	0	0
+October	G	3	Ceratopogonidae	0	0
+October	G	3	Diptera	0	0
+October	G	3	Coleoptera	11	0.016200295
+October	G	3	Orthoptera	0	0
+October	G	3	Culicoides	0	0
+October	G	3	Chironomidae	0	0

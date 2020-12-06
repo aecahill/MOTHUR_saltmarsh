@@ -1,190 +1,190 @@
-Month	Site	Replicate	Taxon	Count
-April	A	1	Insecta	3278
-April	A	1	Arthropoda	104
-April	A	1	Clitellata	0
-April	A	1	Arachnida	0
-April	A	1	Hydrozoa	3
-April	A	1	Bdelloidea	0
-April	A	1	Gastropoda	0
-April	A	1	Monogononta	18
-April	A	1	Ostracoda	0
-April	A	2	Insecta	4058
-April	A	2	Arthropoda	379
-April	A	2	Clitellata	0
-April	A	2	Arachnida	54
-April	A	2	Hydrozoa	0
-April	A	2	Bdelloidea	0
-April	A	2	Gastropoda	0
-April	A	2	Monogononta	0
-April	A	2	Ostracoda	0
-April	A	3	Insecta	6050
-April	A	3	Arthropoda	182
-April	A	3	Clitellata	0
-April	A	3	Arachnida	0
-April	A	3	Hydrozoa	200
-April	A	3	Bdelloidea	0
-April	A	3	Gastropoda	0
-April	A	3	Monogononta	31
-April	A	3	Ostracoda	0
-April	B	1	Insecta	5466
-April	B	1	Arthropoda	1227
-April	B	1	Clitellata	121
-April	B	1	Arachnida	32
-April	B	1	Hydrozoa	0
-April	B	1	Bdelloidea	57
-April	B	1	Gastropoda	42
-April	B	1	Monogononta	0
-April	B	1	Ostracoda	58
-April	B	2	Insecta	10814
-April	B	2	Arthropoda	1356
-April	B	2	Clitellata	5
-April	B	2	Arachnida	16
-April	B	2	Hydrozoa	57
-April	B	2	Bdelloidea	0
-April	B	2	Gastropoda	0
-April	B	2	Monogononta	0
-April	B	2	Ostracoda	0
-April	B	3	Insecta	12081
-April	B	3	Arthropoda	1935
-April	B	3	Clitellata	1559
-April	B	3	Arachnida	10
-April	B	3	Hydrozoa	11
-April	B	3	Bdelloidea	0
-April	B	3	Gastropoda	1
-April	B	3	Monogononta	8
-April	B	3	Ostracoda	22
-April	C	1	Insecta	7491
-April	C	1	Arthropoda	1887
-April	C	1	Clitellata	16
-April	C	1	Arachnida	4
-April	C	1	Hydrozoa	0
-April	C	1	Bdelloidea	3
-April	C	1	Gastropoda	10
-April	C	1	Monogononta	0
-April	C	1	Ostracoda	0
-April	C	2	Insecta	9274
-April	C	2	Arthropoda	1690
-April	C	2	Clitellata	1664
-April	C	2	Arachnida	0
-April	C	2	Hydrozoa	53
-April	C	2	Bdelloidea	0
-April	C	2	Gastropoda	2
-April	C	2	Monogononta	0
-April	C	2	Ostracoda	0
-April	C	3	Insecta	3224
-April	C	3	Arthropoda	3726
-April	C	3	Clitellata	0
-April	C	3	Arachnida	3
-April	C	3	Hydrozoa	0
-April	C	3	Bdelloidea	60
-April	C	3	Gastropoda	4
-April	C	3	Monogononta	87
-April	C	3	Ostracoda	0
-April	D	1	Insecta	6740
-April	D	1	Arthropoda	2664
-April	D	1	Clitellata	10138
-April	D	1	Arachnida	46
-April	D	1	Hydrozoa	129
-April	D	1	Bdelloidea	114
-April	D	1	Gastropoda	0
-April	D	1	Monogononta	116
-April	D	1	Ostracoda	0
-April	D	2	Insecta	3937
-April	D	2	Arthropoda	3883
-April	D	2	Clitellata	34
-April	D	2	Arachnida	77
-April	D	2	Hydrozoa	33
-April	D	2	Bdelloidea	17
-April	D	2	Gastropoda	0
-April	D	2	Monogononta	0
-April	D	2	Ostracoda	0
-April	D	3	Insecta	6721
-April	D	3	Arthropoda	2209
-April	D	3	Clitellata	0
-April	D	3	Arachnida	30
-April	D	3	Hydrozoa	24
-April	D	3	Bdelloidea	12
-April	D	3	Gastropoda	0
-April	D	3	Monogononta	0
-April	D	3	Ostracoda	23
-April	E	1	Insecta	10228
-April	E	1	Arthropoda	1510
-April	E	1	Clitellata	0
-April	E	1	Arachnida	51
-April	E	1	Hydrozoa	21
-April	E	1	Bdelloidea	11
-April	E	1	Gastropoda	0
-April	E	1	Monogononta	179
-April	E	1	Ostracoda	37
-April	E	2	Insecta	5672
-April	E	2	Arthropoda	3150
-April	E	2	Clitellata	208
-April	E	2	Arachnida	191
-April	E	2	Hydrozoa	0
-April	E	2	Bdelloidea	76
-April	E	2	Gastropoda	0
-April	E	2	Monogononta	18
-April	E	2	Ostracoda	0
-April	E	3	Insecta	7965
-April	E	3	Arthropoda	2367
-April	E	3	Clitellata	261
-April	E	3	Arachnida	56
-April	E	3	Hydrozoa	25
-April	E	3	Bdelloidea	91
-April	E	3	Gastropoda	4
-April	E	3	Monogononta	10
-April	E	3	Ostracoda	0
-April	F	1	Insecta	16409
-April	F	1	Arthropoda	1020
-April	F	1	Clitellata	10
-April	F	1	Arachnida	66
-April	F	1	Hydrozoa	11
-April	F	1	Bdelloidea	0
-April	F	1	Gastropoda	0
-April	F	1	Monogononta	0
-April	F	1	Ostracoda	0
-April	F	2	Insecta	18995
-April	F	2	Arthropoda	989
-April	F	2	Clitellata	4
-April	F	2	Arachnida	33
-April	F	2	Hydrozoa	12
-April	F	2	Bdelloidea	0
-April	F	2	Gastropoda	2
-April	F	2	Monogononta	0
-April	F	2	Ostracoda	29
-April	F	3	Insecta	14454
-April	F	3	Arthropoda	4081
-April	F	3	Clitellata	4
-April	F	3	Arachnida	18
-April	F	3	Hydrozoa	0
-April	F	3	Bdelloidea	42
-April	F	3	Gastropoda	45
-April	F	3	Monogononta	0
-April	F	3	Ostracoda	23
-April	G	1	Insecta	5065
-April	G	1	Arthropoda	2057
-April	G	1	Clitellata	29
-April	G	1	Arachnida	130
-April	G	1	Hydrozoa	54
-April	G	1	Bdelloidea	14
-April	G	1	Gastropoda	22
-April	G	1	Monogononta	0
-April	G	1	Ostracoda	30
-April	G	2	Insecta	2448
-April	G	2	Arthropoda	2857
-April	G	2	Clitellata	16
-April	G	2	Arachnida	232
-April	G	2	Hydrozoa	5
-April	G	2	Bdelloidea	110
-April	G	2	Gastropoda	0
-April	G	2	Monogononta	0
-April	G	2	Ostracoda	0
-April	G	3	Insecta	2454
-April	G	3	Arthropoda	3304
-April	G	3	Clitellata	0
-April	G	3	Arachnida	228
-April	G	3	Hydrozoa	0
-April	G	3	Bdelloidea	268
-April	G	3	Gastropoda	25
-April	G	3	Monogononta	0
-April	G	3	Ostracoda	0
+Month	Site	Replicate	Taxon	Count	Percent
+April	A	1	Insecta	3278	0.22832068
+April	A	1	Arthropoda	104	0.007243853
+April	A	1	Clitellata	0	0
+April	A	1	Arachnida	0	0
+April	A	1	Hydrozoa	3	0.000208957
+April	A	1	Bdelloidea	0	0
+April	A	1	Gastropoda	0	0
+April	A	1	Monogononta	18	0.001253744
+April	A	1	Ostracoda	0	0
+April	A	2	Insecta	4058	0.282649579
+April	A	2	Arthropoda	379	0.026398273
+April	A	2	Clitellata	0	0
+April	A	2	Arachnida	54	0.003761231
+April	A	2	Hydrozoa	0	0
+April	A	2	Bdelloidea	0	0
+April	A	2	Gastropoda	0	0
+April	A	2	Monogononta	0	0
+April	A	2	Ostracoda	0	0
+April	A	3	Insecta	6050	0.421397228
+April	A	3	Arthropoda	182	0.012676743
+April	A	3	Clitellata	0	0
+April	A	3	Arachnida	0	0
+April	A	3	Hydrozoa	200	0.013930487
+April	A	3	Bdelloidea	0	0
+April	A	3	Gastropoda	0	0
+April	A	3	Monogononta	31	0.002159225
+April	A	3	Ostracoda	0	0
+April	B	1	Insecta	5466	0.156717702
+April	B	1	Arthropoda	1227	0.035179769
+April	B	1	Clitellata	121	0.003469236
+April	B	1	Arachnida	32	0.000917484
+April	B	1	Hydrozoa	0	0
+April	B	1	Bdelloidea	57	0.001634268
+April	B	1	Gastropoda	42	0.001204197
+April	B	1	Monogononta	0	0
+April	B	1	Ostracoda	58	0.001662939
+April	B	2	Insecta	10814	0.310052182
+April	B	2	Arthropoda	1356	0.038878376
+April	B	2	Clitellata	5	0.000143357
+April	B	2	Arachnida	16	0.000458742
+April	B	2	Hydrozoa	57	0.001634268
+April	B	2	Bdelloidea	0	0
+April	B	2	Gastropoda	0	0
+April	B	2	Monogononta	0	0
+April	B	2	Ostracoda	0	0
+April	B	3	Insecta	12081	0.346378806
+April	B	3	Arthropoda	1935	0.055479099
+April	B	3	Clitellata	1559	0.044698664
+April	B	3	Arachnida	10	0.000286714
+April	B	3	Hydrozoa	11	0.000315385
+April	B	3	Bdelloidea	0	0
+April	B	3	Gastropoda	1	2.86714E-05
+April	B	3	Monogononta	8	0.000229371
+April	B	3	Ostracoda	22	0.00063077
+April	C	1	Insecta	7491	0.256558668
+April	C	1	Arthropoda	1887	0.064627714
+April	C	1	Clitellata	16	0.000547983
+April	C	1	Arachnida	4	0.000136996
+April	C	1	Hydrozoa	0	0
+April	C	1	Bdelloidea	3	0.000102747
+April	C	1	Gastropoda	10	0.000342489
+April	C	1	Monogononta	0	0
+April	C	1	Ostracoda	0	0
+April	C	2	Insecta	9274	0.317624495
+April	C	2	Arthropoda	1690	0.057880677
+April	C	2	Clitellata	1664	0.056990205
+April	C	2	Arachnida	0	0
+April	C	2	Hydrozoa	53	0.001815193
+April	C	2	Bdelloidea	0	0
+April	C	2	Gastropoda	2	6.84978E-05
+April	C	2	Monogononta	0	0
+April	C	2	Ostracoda	0	0
+April	C	3	Insecta	3224	0.110418522
+April	C	3	Arthropoda	3726	0.12761148
+April	C	3	Clitellata	0	0
+April	C	3	Arachnida	3	0.000102747
+April	C	3	Hydrozoa	0	0
+April	C	3	Bdelloidea	60	0.002054935
+April	C	3	Gastropoda	4	0.000136996
+April	C	3	Monogononta	87	0.002979656
+April	C	3	Ostracoda	0	0
+April	D	1	Insecta	6740	0.182423471
+April	D	1	Arthropoda	2664	0.072103283
+April	D	1	Clitellata	10138	0.27439305
+April	D	1	Arachnida	46	0.001245027
+April	D	1	Hydrozoa	129	0.003491488
+April	D	1	Bdelloidea	114	0.003085501
+April	D	1	Gastropoda	0	0
+April	D	1	Monogononta	116	0.003139632
+April	D	1	Ostracoda	0	0
+April	D	2	Insecta	3937	0.106558043
+April	D	2	Arthropoda	3883	0.10509649
+April	D	2	Clitellata	34	0.000920237
+April	D	2	Arachnida	77	0.002084066
+April	D	2	Hydrozoa	33	0.000893171
+April	D	2	Bdelloidea	17	0.000460119
+April	D	2	Gastropoda	0	0
+April	D	2	Monogononta	0	0
+April	D	2	Ostracoda	0	0
+April	D	3	Insecta	6721	0.181909221
+April	D	3	Arthropoda	2209	0.059788345
+April	D	3	Clitellata	0	0
+April	D	3	Arachnida	30	0.000811974
+April	D	3	Hydrozoa	24	0.000649579
+April	D	3	Bdelloidea	12	0.00032479
+April	D	3	Gastropoda	0	0
+April	D	3	Monogononta	0	0
+April	D	3	Ostracoda	23	0.000622513
+April	E	1	Insecta	10228	0.31832187
+April	E	1	Arthropoda	1510	0.046995114
+April	E	1	Clitellata	0	0
+April	E	1	Arachnida	51	0.001587252
+April	E	1	Hydrozoa	21	0.000653574
+April	E	1	Bdelloidea	11	0.000342349
+April	E	1	Gastropoda	0	0
+April	E	1	Monogononta	179	0.005570944
+April	E	1	Ostracoda	37	0.001151536
+April	E	2	Insecta	5672	0.176527341
+April	E	2	Arthropoda	3150	0.098036164
+April	E	2	Clitellata	208	0.006473499
+April	E	2	Arachnida	191	0.005944415
+April	E	2	Hydrozoa	0	0
+April	E	2	Bdelloidea	76	0.002365317
+April	E	2	Gastropoda	0	0
+April	E	2	Monogononta	18	0.000560207
+April	E	2	Ostracoda	0	0
+April	E	3	Insecta	7965	0.247891444
+April	E	3	Arthropoda	2367	0.073667175
+April	E	3	Clitellata	261	0.008122996
+April	E	3	Arachnida	56	0.001742865
+April	E	3	Hydrozoa	25	0.000778065
+April	E	3	Bdelloidea	91	0.002832156
+April	E	3	Gastropoda	4	0.00012449
+April	E	3	Monogononta	10	0.000311226
+April	E	3	Ostracoda	0	0
+April	F	1	Insecta	16409	0.291731115
+April	F	1	Arthropoda	1020	0.0181343
+April	F	1	Clitellata	10	0.000177787
+April	F	1	Arachnida	66	0.001173396
+April	F	1	Hydrozoa	11	0.000195566
+April	F	1	Bdelloidea	0	0
+April	F	1	Gastropoda	0	0
+April	F	1	Monogononta	0	0
+April	F	1	Ostracoda	0	0
+April	F	2	Insecta	18995	0.3377069
+April	F	2	Arthropoda	989	0.01758316
+April	F	2	Clitellata	4	7.11149E-05
+April	F	2	Arachnida	33	0.000586698
+April	F	2	Hydrozoa	12	0.000213345
+April	F	2	Bdelloidea	0	0
+April	F	2	Gastropoda	2	3.55575E-05
+April	F	2	Monogononta	0	0
+April	F	2	Ostracoda	29	0.000515583
+April	F	3	Insecta	14454	0.256973705
+April	F	3	Arthropoda	4081	0.072554981
+April	F	3	Clitellata	4	7.11149E-05
+April	F	3	Arachnida	18	0.000320017
+April	F	3	Hydrozoa	0	0
+April	F	3	Bdelloidea	42	0.000746706
+April	F	3	Gastropoda	45	0.000800043
+April	F	3	Monogononta	0	0
+April	F	3	Ostracoda	23	0.000408911
+April	G	1	Insecta	5065	0.261784164
+April	G	1	Arthropoda	2057	0.106315898
+April	G	1	Clitellata	29	0.001498863
+April	G	1	Arachnida	130	0.006719041
+April	G	1	Hydrozoa	54	0.002790986
+April	G	1	Bdelloidea	14	0.000723589
+April	G	1	Gastropoda	22	0.001137068
+April	G	1	Monogononta	0	0
+April	G	1	Ostracoda	30	0.001550548
+April	G	2	Insecta	2448	0.126524705
+April	G	2	Arthropoda	2857	0.147663841
+April	G	2	Clitellata	16	0.000826959
+April	G	2	Arachnida	232	0.011990903
+April	G	2	Hydrozoa	5	0.000258425
+April	G	2	Bdelloidea	110	0.005685342
+April	G	2	Gastropoda	0	0
+April	G	2	Monogononta	0	0
+April	G	2	Ostracoda	0	0
+April	G	3	Insecta	2454	0.126834815
+April	G	3	Arthropoda	3304	0.170767004
+April	G	3	Clitellata	0	0
+April	G	3	Arachnida	228	0.011784164
+April	G	3	Hydrozoa	0	0
+April	G	3	Bdelloidea	268	0.013851561
+April	G	3	Gastropoda	25	0.001292123
+April	G	3	Monogononta	0	0
+April	G	3	Ostracoda	0	0

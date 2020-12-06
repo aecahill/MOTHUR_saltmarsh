@@ -1,190 +1,190 @@
-Month	Site	Replicate	Taxon	Count
-July	A	1	Lepidoptera	474
-July	A	1	Dasyhelea	285
-July	A	1	Odonata	0
-July	A	1	Ceratopogonidae	0
-July	A	1	Diptera	12
-July	A	1	Coleoptera	0
-July	A	1	Orthoptera	0
-July	A	1	Culicoides	0
-July	A	1	Chironomidae	0
-July	A	2	Lepidoptera	0
-July	A	2	Dasyhelea	0
-July	A	2	Odonata	0
-July	A	2	Ceratopogonidae	0
-July	A	2	Diptera	0
-July	A	2	Coleoptera	0
-July	A	2	Orthoptera	0
-July	A	2	Culicoides	0
-July	A	2	Chironomidae	0
-July	A	3	Lepidoptera	88
-July	A	3	Dasyhelea	7592
-July	A	3	Odonata	0
-July	A	3	Ceratopogonidae	0
-July	A	3	Diptera	0
-July	A	3	Coleoptera	0
-July	A	3	Orthoptera	0
-July	A	3	Culicoides	740
-July	A	3	Chironomidae	0
-July	B	1	Lepidoptera	674
-July	B	1	Dasyhelea	142
-July	B	1	Odonata	0
-July	B	1	Ceratopogonidae	6
-July	B	1	Diptera	0
-July	B	1	Coleoptera	111
-July	B	1	Orthoptera	0
-July	B	1	Culicoides	0
-July	B	1	Chironomidae	0
-July	B	2	Lepidoptera	773
-July	B	2	Dasyhelea	0
-July	B	2	Odonata	0
-July	B	2	Ceratopogonidae	0
-July	B	2	Diptera	14
-July	B	2	Coleoptera	0
-July	B	2	Orthoptera	0
-July	B	2	Culicoides	0
-July	B	2	Chironomidae	0
-July	B	3	Lepidoptera	79
-July	B	3	Dasyhelea	16
-July	B	3	Odonata	0
-July	B	3	Ceratopogonidae	0
-July	B	3	Diptera	17
-July	B	3	Coleoptera	0
-July	B	3	Orthoptera	2475
-July	B	3	Culicoides	0
-July	B	3	Chironomidae	0
-July	C	1	Lepidoptera	4
-July	C	1	Dasyhelea	95
-July	C	1	Odonata	0
-July	C	1	Ceratopogonidae	606
-July	C	1	Diptera	12
-July	C	1	Coleoptera	0
-July	C	1	Orthoptera	0
-July	C	1	Culicoides	0
-July	C	1	Chironomidae	0
-July	C	2	Lepidoptera	1962
-July	C	2	Dasyhelea	134
-July	C	2	Odonata	0
-July	C	2	Ceratopogonidae	70
-July	C	2	Diptera	15
-July	C	2	Coleoptera	0
-July	C	2	Orthoptera	0
-July	C	2	Culicoides	0
-July	C	2	Chironomidae	0
-July	C	3	Lepidoptera	904
-July	C	3	Dasyhelea	24
-July	C	3	Odonata	0
-July	C	3	Ceratopogonidae	281
-July	C	3	Diptera	0
-July	C	3	Coleoptera	0
-July	C	3	Orthoptera	0
-July	C	3	Culicoides	0
-July	C	3	Chironomidae	0
-July	D	1	Lepidoptera	241
-July	D	1	Dasyhelea	0
-July	D	1	Odonata	0
-July	D	1	Ceratopogonidae	45
-July	D	1	Diptera	0
-July	D	1	Coleoptera	0
-July	D	1	Orthoptera	0
-July	D	1	Culicoides	27
-July	D	1	Chironomidae	0
-July	D	2	Lepidoptera	134
-July	D	2	Dasyhelea	0
-July	D	2	Odonata	0
-July	D	2	Ceratopogonidae	436
-July	D	2	Diptera	16
-July	D	2	Coleoptera	0
-July	D	2	Orthoptera	0
-July	D	2	Culicoides	0
-July	D	2	Chironomidae	0
-July	D	3	Lepidoptera	199
-July	D	3	Dasyhelea	0
-July	D	3	Odonata	0
-July	D	3	Ceratopogonidae	0
-July	D	3	Diptera	0
-July	D	3	Coleoptera	21
-July	D	3	Orthoptera	0
-July	D	3	Culicoides	13
-July	D	3	Chironomidae	0
-July	E	1	Lepidoptera	567
-July	E	1	Dasyhelea	36
-July	E	1	Odonata	0
-July	E	1	Ceratopogonidae	0
-July	E	1	Diptera	1
-July	E	1	Coleoptera	0
-July	E	1	Orthoptera	0
-July	E	1	Culicoides	0
-July	E	1	Chironomidae	0
-July	E	2	Lepidoptera	702
-July	E	2	Dasyhelea	335
-July	E	2	Odonata	0
-July	E	2	Ceratopogonidae	0
-July	E	2	Diptera	0
-July	E	2	Coleoptera	14
-July	E	2	Orthoptera	0
-July	E	2	Culicoides	23
-July	E	2	Chironomidae	5
-July	E	3	Lepidoptera	843
-July	E	3	Dasyhelea	0
-July	E	3	Odonata	0
-July	E	3	Ceratopogonidae	0
-July	E	3	Diptera	24
-July	E	3	Coleoptera	0
-July	E	3	Orthoptera	0
-July	E	3	Culicoides	0
-July	E	3	Chironomidae	0
-July	F	1	Lepidoptera	73
-July	F	1	Dasyhelea	974
-July	F	1	Odonata	0
-July	F	1	Ceratopogonidae	58
-July	F	1	Diptera	0
-July	F	1	Coleoptera	0
-July	F	1	Orthoptera	0
-July	F	1	Culicoides	0
-July	F	1	Chironomidae	0
-July	F	2	Lepidoptera	34
-July	F	2	Dasyhelea	0
-July	F	2	Odonata	0
-July	F	2	Ceratopogonidae	0
-July	F	2	Diptera	14
-July	F	2	Coleoptera	19
-July	F	2	Orthoptera	0
-July	F	2	Culicoides	0
-July	F	2	Chironomidae	0
-July	F	3	Lepidoptera	96
-July	F	3	Dasyhelea	51
-July	F	3	Odonata	0
-July	F	3	Ceratopogonidae	40
-July	F	3	Diptera	0
-July	F	3	Coleoptera	15
-July	F	3	Orthoptera	0
-July	F	3	Culicoides	0
-July	F	3	Chironomidae	0
-July	G	1	Lepidoptera	42
-July	G	1	Dasyhelea	0
-July	G	1	Odonata	0
-July	G	1	Ceratopogonidae	0
-July	G	1	Diptera	0
-July	G	1	Coleoptera	0
-July	G	1	Orthoptera	0
-July	G	1	Culicoides	0
-July	G	1	Chironomidae	0
-July	G	2	Lepidoptera	134
-July	G	2	Dasyhelea	0
-July	G	2	Odonata	0
-July	G	2	Ceratopogonidae	0
-July	G	2	Diptera	47
-July	G	2	Coleoptera	0
-July	G	2	Orthoptera	0
-July	G	2	Culicoides	0
-July	G	2	Chironomidae	8
-July	G	3	Lepidoptera	286
-July	G	3	Dasyhelea	0
-July	G	3	Odonata	0
-July	G	3	Ceratopogonidae	0
-July	G	3	Diptera	13
-July	G	3	Coleoptera	0
-July	G	3	Orthoptera	0
-July	G	3	Culicoides	0
-July	G	3	Chironomidae	0
+Month	Site	Replicate	Taxon	Count	Percent
+July	A	1	Lepidoptera	474	0.05157219
+July	A	1	Dasyhelea	285	0.031008595
+July	A	1	Odonata	0	0
+July	A	1	Ceratopogonidae	0	0
+July	A	1	Diptera	12	0.001305625
+July	A	1	Coleoptera	0	0
+July	A	1	Orthoptera	0	0
+July	A	1	Culicoides	0	0
+July	A	1	Chironomidae	0	0
+July	A	2	Lepidoptera	0	0
+July	A	2	Dasyhelea	0	0
+July	A	2	Odonata	0	0
+July	A	2	Ceratopogonidae	0	0
+July	A	2	Diptera	0	0
+July	A	2	Coleoptera	0	0
+July	A	2	Orthoptera	0	0
+July	A	2	Culicoides	0	0
+July	A	2	Chironomidae	0	0
+July	A	3	Lepidoptera	88	0.009574584
+July	A	3	Dasyhelea	7592	0.82602546
+July	A	3	Odonata	0	0
+July	A	3	Ceratopogonidae	0	0
+July	A	3	Diptera	0	0
+July	A	3	Coleoptera	0	0
+July	A	3	Orthoptera	0	0
+July	A	3	Culicoides	740	0.080513546
+July	A	3	Chironomidae	0	0
+July	B	1	Lepidoptera	674	0.156489436
+July	B	1	Dasyhelea	142	0.032969584
+July	B	1	Odonata	0	0
+July	B	1	Ceratopogonidae	6	0.001393081
+July	B	1	Diptera	0	0
+July	B	1	Coleoptera	111	0.025771999
+July	B	1	Orthoptera	0	0
+July	B	1	Culicoides	0	0
+July	B	1	Chironomidae	0	0
+July	B	2	Lepidoptera	773	0.179475273
+July	B	2	Dasyhelea	0	0
+July	B	2	Odonata	0	0
+July	B	2	Ceratopogonidae	0	0
+July	B	2	Diptera	14	0.003250522
+July	B	2	Coleoptera	0	0
+July	B	2	Orthoptera	0	0
+July	B	2	Culicoides	0	0
+July	B	2	Chironomidae	0	0
+July	B	3	Lepidoptera	79	0.018342234
+July	B	3	Dasyhelea	16	0.003714883
+July	B	3	Odonata	0	0
+July	B	3	Ceratopogonidae	0	0
+July	B	3	Diptera	17	0.003947063
+July	B	3	Coleoptera	0	0
+July	B	3	Orthoptera	2475	0.574645925
+July	B	3	Culicoides	0	0
+July	B	3	Chironomidae	0	0
+July	C	1	Lepidoptera	4	0.000973947
+July	C	1	Dasyhelea	95	0.023131239
+July	C	1	Odonata	0	0
+July	C	1	Ceratopogonidae	606	0.147552958
+July	C	1	Diptera	12	0.002921841
+July	C	1	Coleoptera	0	0
+July	C	1	Orthoptera	0	0
+July	C	1	Culicoides	0	0
+July	C	1	Chironomidae	0	0
+July	C	2	Lepidoptera	1962	0.477720964
+July	C	2	Dasyhelea	134	0.032627222
+July	C	2	Odonata	0	0
+July	C	2	Ceratopogonidae	70	0.017044071
+July	C	2	Diptera	15	0.003652301
+July	C	2	Coleoptera	0	0
+July	C	2	Orthoptera	0	0
+July	C	2	Culicoides	0	0
+July	C	2	Chironomidae	0	0
+July	C	3	Lepidoptera	904	0.220112004
+July	C	3	Dasyhelea	24	0.005843682
+July	C	3	Odonata	0	0
+July	C	3	Ceratopogonidae	281	0.068419771
+July	C	3	Diptera	0	0
+July	C	3	Coleoptera	0	0
+July	C	3	Orthoptera	0	0
+July	C	3	Culicoides	0	0
+July	C	3	Chironomidae	0	0
+July	D	1	Lepidoptera	241	0.212897527
+July	D	1	Dasyhelea	0	0
+July	D	1	Odonata	0	0
+July	D	1	Ceratopogonidae	45	0.03975265
+July	D	1	Diptera	0	0
+July	D	1	Coleoptera	0	0
+July	D	1	Orthoptera	0	0
+July	D	1	Culicoides	27	0.02385159
+July	D	1	Chironomidae	0	0
+July	D	2	Lepidoptera	134	0.118374558
+July	D	2	Dasyhelea	0	0
+July	D	2	Odonata	0	0
+July	D	2	Ceratopogonidae	436	0.385159011
+July	D	2	Diptera	16	0.014134276
+July	D	2	Coleoptera	0	0
+July	D	2	Orthoptera	0	0
+July	D	2	Culicoides	0	0
+July	D	2	Chironomidae	0	0
+July	D	3	Lepidoptera	199	0.175795053
+July	D	3	Dasyhelea	0	0
+July	D	3	Odonata	0	0
+July	D	3	Ceratopogonidae	0	0
+July	D	3	Diptera	0	0
+July	D	3	Coleoptera	21	0.018551237
+July	D	3	Orthoptera	0	0
+July	D	3	Culicoides	13	0.011484099
+July	D	3	Chironomidae	0	0
+July	E	1	Lepidoptera	567	0.222352941
+July	E	1	Dasyhelea	36	0.014117647
+July	E	1	Odonata	0	0
+July	E	1	Ceratopogonidae	0	0
+July	E	1	Diptera	1	0.000392157
+July	E	1	Coleoptera	0	0
+July	E	1	Orthoptera	0	0
+July	E	1	Culicoides	0	0
+July	E	1	Chironomidae	0	0
+July	E	2	Lepidoptera	702	0.275294118
+July	E	2	Dasyhelea	335	0.131372549
+July	E	2	Odonata	0	0
+July	E	2	Ceratopogonidae	0	0
+July	E	2	Diptera	0	0
+July	E	2	Coleoptera	14	0.005490196
+July	E	2	Orthoptera	0	0
+July	E	2	Culicoides	23	0.009019608
+July	E	2	Chironomidae	5	0.001960784
+July	E	3	Lepidoptera	843	0.330588235
+July	E	3	Dasyhelea	0	0
+July	E	3	Odonata	0	0
+July	E	3	Ceratopogonidae	0	0
+July	E	3	Diptera	24	0.009411765
+July	E	3	Coleoptera	0	0
+July	E	3	Orthoptera	0	0
+July	E	3	Culicoides	0	0
+July	E	3	Chironomidae	0	0
+July	F	1	Lepidoptera	73	0.053129549
+July	F	1	Dasyhelea	974	0.708879185
+July	F	1	Odonata	0	0
+July	F	1	Ceratopogonidae	58	0.042212518
+July	F	1	Diptera	0	0
+July	F	1	Coleoptera	0	0
+July	F	1	Orthoptera	0	0
+July	F	1	Culicoides	0	0
+July	F	1	Chironomidae	0	0
+July	F	2	Lepidoptera	34	0.024745269
+July	F	2	Dasyhelea	0	0
+July	F	2	Odonata	0	0
+July	F	2	Ceratopogonidae	0	0
+July	F	2	Diptera	14	0.010189229
+July	F	2	Coleoptera	19	0.013828239
+July	F	2	Orthoptera	0	0
+July	F	2	Culicoides	0	0
+July	F	2	Chironomidae	0	0
+July	F	3	Lepidoptera	96	0.069868996
+July	F	3	Dasyhelea	51	0.037117904
+July	F	3	Odonata	0	0
+July	F	3	Ceratopogonidae	40	0.029112082
+July	F	3	Diptera	0	0
+July	F	3	Coleoptera	15	0.010917031
+July	F	3	Orthoptera	0	0
+July	F	3	Culicoides	0	0
+July	F	3	Chironomidae	0	0
+July	G	1	Lepidoptera	42	0.079245283
+July	G	1	Dasyhelea	0	0
+July	G	1	Odonata	0	0
+July	G	1	Ceratopogonidae	0	0
+July	G	1	Diptera	0	0
+July	G	1	Coleoptera	0	0
+July	G	1	Orthoptera	0	0
+July	G	1	Culicoides	0	0
+July	G	1	Chironomidae	0	0
+July	G	2	Lepidoptera	134	0.252830189
+July	G	2	Dasyhelea	0	0
+July	G	2	Odonata	0	0
+July	G	2	Ceratopogonidae	0	0
+July	G	2	Diptera	47	0.088679245
+July	G	2	Coleoptera	0	0
+July	G	2	Orthoptera	0	0
+July	G	2	Culicoides	0	0
+July	G	2	Chironomidae	8	0.01509434
+July	G	3	Lepidoptera	286	0.539622642
+July	G	3	Dasyhelea	0	0
+July	G	3	Odonata	0	0
+July	G	3	Ceratopogonidae	0	0
+July	G	3	Diptera	13	0.024528302
+July	G	3	Coleoptera	0	0
+July	G	3	Orthoptera	0	0
+July	G	3	Culicoides	0	0
+July	G	3	Chironomidae	0	0

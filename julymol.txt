@@ -1,190 +1,190 @@
-Month	Site	Replicate	Taxon	Count
-July	A	1	Insecta	1901
-July	A	1	Arthropoda	1341
-July	A	1	Clitellata	0
-July	A	1	Arachnida	26
-July	A	1	Hydrozoa	0
-July	A	1	Bdelloidea	0
-July	A	1	Gastropoda	0
-July	A	1	Monogononta	8
-July	A	1	Ostracoda	0
-July	A	2	Insecta	3
-July	A	2	Arthropoda	0
-July	A	2	Clitellata	0
-July	A	2	Arachnida	14167
-July	A	2	Hydrozoa	0
-July	A	2	Bdelloidea	0
-July	A	2	Gastropoda	0
-July	A	2	Monogononta	0
-July	A	2	Ostracoda	0
-July	A	3	Insecta	9123
-July	A	3	Arthropoda	1161
-July	A	3	Clitellata	0
-July	A	3	Arachnida	0
-July	A	3	Hydrozoa	51
-July	A	3	Bdelloidea	0
-July	A	3	Gastropoda	9
-July	A	3	Monogononta	0
-July	A	3	Ostracoda	9
-July	B	1	Insecta	2378
-July	B	1	Arthropoda	1241
-July	B	1	Clitellata	731
-July	B	1	Arachnida	236
-July	B	1	Hydrozoa	143
-July	B	1	Bdelloidea	0
-July	B	1	Gastropoda	11
-July	B	1	Monogononta	5
-July	B	1	Ostracoda	0
-July	B	2	Insecta	1766
-July	B	2	Arthropoda	646
-July	B	2	Clitellata	0
-July	B	2	Arachnida	57
-July	B	2	Hydrozoa	0
-July	B	2	Bdelloidea	0
-July	B	2	Gastropoda	12
-July	B	2	Monogononta	0
-July	B	2	Ostracoda	0
-July	B	3	Insecta	3474
-July	B	3	Arthropoda	776
-July	B	3	Clitellata	0
-July	B	3	Arachnida	48
-July	B	3	Hydrozoa	718
-July	B	3	Bdelloidea	0
-July	B	3	Gastropoda	7
-July	B	3	Monogononta	0
-July	B	3	Ostracoda	0
-July	C	1	Insecta	2192
-July	C	1	Arthropoda	732
-July	C	1	Clitellata	17
-July	C	1	Arachnida	67
-July	C	1	Hydrozoa	0
-July	C	1	Bdelloidea	0
-July	C	1	Gastropoda	29
-July	C	1	Monogononta	0
-July	C	1	Ostracoda	0
-July	C	2	Insecta	4986
-July	C	2	Arthropoda	1898
-July	C	2	Clitellata	0
-July	C	2	Arachnida	34
-July	C	2	Hydrozoa	0
-July	C	2	Bdelloidea	0
-July	C	2	Gastropoda	21
-July	C	2	Monogononta	42
-July	C	2	Ostracoda	36
-July	C	3	Insecta	3560
-July	C	3	Arthropoda	1446
-July	C	3	Clitellata	0
-July	C	3	Arachnida	0
-July	C	3	Hydrozoa	266
-July	C	3	Bdelloidea	0
-July	C	3	Gastropoda	8
-July	C	3	Monogononta	0
-July	C	3	Ostracoda	0
-July	D	1	Insecta	2499
-July	D	1	Arthropoda	930
-July	D	1	Clitellata	369
-July	D	1	Arachnida	319
-July	D	1	Hydrozoa	188
-July	D	1	Bdelloidea	0
-July	D	1	Gastropoda	19
-July	D	1	Monogononta	88
-July	D	1	Ostracoda	0
-July	D	2	Insecta	1842
-July	D	2	Arthropoda	651
-July	D	2	Clitellata	482
-July	D	2	Arachnida	145
-July	D	2	Hydrozoa	0
-July	D	2	Bdelloidea	0
-July	D	2	Gastropoda	22
-July	D	2	Monogononta	13
-July	D	2	Ostracoda	0
-July	D	3	Insecta	2025
-July	D	3	Arthropoda	995
-July	D	3	Clitellata	12
-July	D	3	Arachnida	79
-July	D	3	Hydrozoa	0
-July	D	3	Bdelloidea	0
-July	D	3	Gastropoda	21
-July	D	3	Monogononta	0
-July	D	3	Ostracoda	0
-July	E	1	Insecta	1790
-July	E	1	Arthropoda	813
-July	E	1	Clitellata	524
-July	E	1	Arachnida	513
-July	E	1	Hydrozoa	0
-July	E	1	Bdelloidea	0
-July	E	1	Gastropoda	0
-July	E	1	Monogononta	150
-July	E	1	Ostracoda	0
-July	E	2	Insecta	3351
-July	E	2	Arthropoda	903
-July	E	2	Clitellata	193
-July	E	2	Arachnida	162
-July	E	2	Hydrozoa	415
-July	E	2	Bdelloidea	0
-July	E	2	Gastropoda	1
-July	E	2	Monogononta	18
-July	E	2	Ostracoda	0
-July	E	3	Insecta	2416
-July	E	3	Arthropoda	1286
-July	E	3	Clitellata	1173
-July	E	3	Arachnida	257
-July	E	3	Hydrozoa	524
-July	E	3	Bdelloidea	0
-July	E	3	Gastropoda	2
-July	E	3	Monogononta	10
-July	E	3	Ostracoda	0
-July	F	1	Insecta	3017
-July	F	1	Arthropoda	1026
-July	F	1	Clitellata	1487
-July	F	1	Arachnida	101
-July	F	1	Hydrozoa	317
-July	F	1	Bdelloidea	0
-July	F	1	Gastropoda	0
-July	F	1	Monogononta	0
-July	F	1	Ostracoda	0
-July	F	2	Insecta	1579
-July	F	2	Arthropoda	1555
-July	F	2	Clitellata	1999
-July	F	2	Arachnida	153
-July	F	2	Hydrozoa	5
-July	F	2	Bdelloidea	0
-July	F	2	Gastropoda	3
-July	F	2	Monogononta	0
-July	F	2	Ostracoda	0
-July	F	3	Insecta	1494
-July	F	3	Arthropoda	1030
-July	F	3	Clitellata	0
-July	F	3	Arachnida	198
-July	F	3	Hydrozoa	45
-July	F	3	Bdelloidea	0
-July	F	3	Gastropoda	13
-July	F	3	Monogononta	0
-July	F	3	Ostracoda	0
-July	G	1	Insecta	1296
-July	G	1	Arthropoda	857
-July	G	1	Clitellata	0
-July	G	1	Arachnida	45
-July	G	1	Hydrozoa	34
-July	G	1	Bdelloidea	20
-July	G	1	Gastropoda	0
-July	G	1	Monogononta	0
-July	G	1	Ostracoda	0
-July	G	2	Insecta	1807
-July	G	2	Arthropoda	1389
-July	G	2	Clitellata	37
-July	G	2	Arachnida	381
-July	G	2	Hydrozoa	146
-July	G	2	Bdelloidea	14
-July	G	2	Gastropoda	1
-July	G	2	Monogononta	0
-July	G	2	Ostracoda	0
-July	G	3	Insecta	1194
-July	G	3	Arthropoda	474
-July	G	3	Clitellata	25
-July	G	3	Arachnida	126
-July	G	3	Hydrozoa	297
-July	G	3	Bdelloidea	0
-July	G	3	Gastropoda	0
-July	G	3	Monogononta	14
-July	G	3	Ostracoda	0
+Month	Site	Replicate	Taxon	Count	Percent
+July	A	1	Insecta	1901	0.068383755
+July	A	1	Arthropoda	1341	0.048239145
+July	A	1	Clitellata	0	0
+July	A	1	Arachnida	26	0.000935285
+July	A	1	Hydrozoa	0	0
+July	A	1	Bdelloidea	0	0
+July	A	1	Gastropoda	0	0
+July	A	1	Monogononta	8	0.00028778
+July	A	1	Ostracoda	0	0
+July	A	2	Insecta	3	0.000107918
+July	A	2	Arthropoda	0	0
+July	A	2	Clitellata	0	0
+July	A	2	Arachnida	14167	0.509622648
+July	A	2	Hydrozoa	0	0
+July	A	2	Bdelloidea	0	0
+July	A	2	Gastropoda	0	0
+July	A	2	Monogononta	0	0
+July	A	2	Ostracoda	0	0
+July	A	3	Insecta	9123	0.328177273
+July	A	3	Arthropoda	1161	0.041764092
+July	A	3	Clitellata	0	0
+July	A	3	Arachnida	0	0
+July	A	3	Hydrozoa	51	0.001834598
+July	A	3	Bdelloidea	0	0
+July	A	3	Gastropoda	9	0.000323753
+July	A	3	Monogononta	0	0
+July	A	3	Ostracoda	9	0.000323753
+July	B	1	Insecta	2378	0.194138297
+July	B	1	Arthropoda	1241	0.101314393
+July	B	1	Clitellata	731	0.059678341
+July	B	1	Arachnida	236	0.019266879
+July	B	1	Hydrozoa	143	0.011674422
+July	B	1	Bdelloidea	0	0
+July	B	1	Gastropoda	11	0.000898032
+July	B	1	Monogononta	5	0.000408197
+July	B	1	Ostracoda	0	0
+July	B	2	Insecta	1766	0.144175035
+July	B	2	Arthropoda	646	0.052738999
+July	B	2	Clitellata	0	0
+July	B	2	Arachnida	57	0.004653441
+July	B	2	Hydrozoa	0	0
+July	B	2	Bdelloidea	0	0
+July	B	2	Gastropoda	12	0.000979672
+July	B	2	Monogononta	0	0
+July	B	2	Ostracoda	0	0
+July	B	3	Insecta	3474	0.283614989
+July	B	3	Arthropoda	776	0.06335211
+July	B	3	Clitellata	0	0
+July	B	3	Arachnida	48	0.003918687
+July	B	3	Hydrozoa	718	0.05861703
+July	B	3	Bdelloidea	0	0
+July	B	3	Gastropoda	7	0.000571475
+July	B	3	Monogononta	0	0
+July	B	3	Ostracoda	0	0
+July	C	1	Insecta	2192	0.142950307
+July	C	1	Arthropoda	732	0.047737055
+July	C	1	Clitellata	17	0.001108647
+July	C	1	Arachnida	67	0.004369375
+July	C	1	Hydrozoa	0	0
+July	C	1	Bdelloidea	0	0
+July	C	1	Gastropoda	29	0.001891222
+July	C	1	Monogononta	0	0
+July	C	1	Ostracoda	0	0
+July	C	2	Insecta	4986	0.325159776
+July	C	2	Arthropoda	1898	0.123777227
+July	C	2	Clitellata	0	0
+July	C	2	Arachnida	34	0.002217295
+July	C	2	Hydrozoa	0	0
+July	C	2	Bdelloidea	0	0
+July	C	2	Gastropoda	21	0.001369506
+July	C	2	Monogononta	42	0.002739011
+July	C	2	Ostracoda	36	0.002347724
+July	C	3	Insecta	3560	0.232163819
+July	C	3	Arthropoda	1446	0.094300248
+July	C	3	Clitellata	0	0
+July	C	3	Arachnida	0	0
+July	C	3	Hydrozoa	266	0.017347072
+July	C	3	Bdelloidea	0	0
+July	C	3	Gastropoda	8	0.000521716
+July	C	3	Monogononta	0	0
+July	C	3	Ostracoda	0	0
+July	D	1	Insecta	2499	0.233573231
+July	D	1	Arthropoda	930	0.086924012
+July	D	1	Clitellata	369	0.034489205
+July	D	1	Arachnida	319	0.029815871
+July	D	1	Hydrozoa	188	0.017571736
+July	D	1	Bdelloidea	0	0
+July	D	1	Gastropoda	19	0.001775867
+July	D	1	Monogononta	88	0.008225068
+July	D	1	Ostracoda	0	0
+July	D	2	Insecta	1842	0.172165623
+July	D	2	Arthropoda	651	0.060846808
+July	D	2	Clitellata	482	0.045050939
+July	D	2	Arachnida	145	0.013552668
+July	D	2	Hydrozoa	0	0
+July	D	2	Bdelloidea	0	0
+July	D	2	Gastropoda	22	0.002056267
+July	D	2	Monogononta	13	0.001215067
+July	D	2	Ostracoda	0	0
+July	D	3	Insecta	2025	0.189270025
+July	D	3	Arthropoda	995	0.092999346
+July	D	3	Clitellata	12	0.0011216
+July	D	3	Arachnida	79	0.007383868
+July	D	3	Hydrozoa	0	0
+July	D	3	Bdelloidea	0	0
+July	D	3	Gastropoda	21	0.0019628
+July	D	3	Monogononta	0	0
+July	D	3	Ostracoda	0	0
+July	E	1	Insecta	1790	0.123439763
+July	E	1	Arthropoda	813	0.056065099
+July	E	1	Clitellata	524	0.036135439
+July	E	1	Arachnida	513	0.035376871
+July	E	1	Hydrozoa	0	0
+July	E	1	Bdelloidea	0	0
+July	E	1	Gastropoda	0	0
+July	E	1	Monogononta	150	0.010344114
+July	E	1	Ostracoda	0	0
+July	E	2	Insecta	3351	0.231087511
+July	E	2	Arthropoda	903	0.062271567
+July	E	2	Clitellata	193	0.013309427
+July	E	2	Arachnida	162	0.011171643
+July	E	2	Hydrozoa	415	0.028618716
+July	E	2	Bdelloidea	0	0
+July	E	2	Gastropoda	1	6.89608E-05
+July	E	2	Monogononta	18	0.001241294
+July	E	2	Ostracoda	0	0
+July	E	3	Insecta	2416	0.166609199
+July	E	3	Arthropoda	1286	0.088683539
+July	E	3	Clitellata	1173	0.080890973
+July	E	3	Arachnida	257	0.017722916
+July	E	3	Hydrozoa	524	0.036135439
+July	E	3	Bdelloidea	0	0
+July	E	3	Gastropoda	2	0.000137922
+July	E	3	Monogononta	10	0.000689608
+July	E	3	Ostracoda	0	0
+July	F	1	Insecta	3017	0.215161888
+July	F	1	Arthropoda	1026	0.073170732
+July	F	1	Clitellata	1487	0.106047639
+July	F	1	Arachnida	101	0.007202967
+July	F	1	Hydrozoa	317	0.022607331
+July	F	1	Bdelloidea	0	0
+July	F	1	Gastropoda	0	0
+July	F	1	Monogononta	0	0
+July	F	1	Ostracoda	0	0
+July	F	2	Insecta	1579	0.112608758
+July	F	2	Arthropoda	1555	0.110897162
+July	F	2	Clitellata	1999	0.142561689
+July	F	2	Arachnida	153	0.010911425
+July	F	2	Hydrozoa	5	0.000356583
+July	F	2	Bdelloidea	0	0
+July	F	2	Gastropoda	3	0.00021395
+July	F	2	Monogononta	0	0
+July	F	2	Ostracoda	0	0
+July	F	3	Insecta	1494	0.106546855
+July	F	3	Arthropoda	1030	0.073455998
+July	F	3	Clitellata	0	0
+July	F	3	Arachnida	198	0.014120668
+July	F	3	Hydrozoa	45	0.003209243
+July	F	3	Bdelloidea	0	0
+July	F	3	Gastropoda	13	0.000927115
+July	F	3	Monogononta	0	0
+July	F	3	Ostracoda	0	0
+July	G	1	Insecta	1296	0.158881942
+July	G	1	Arthropoda	857	0.105063136
+July	G	1	Clitellata	0	0
+July	G	1	Arachnida	45	0.005516734
+July	G	1	Hydrozoa	34	0.004168199
+July	G	1	Bdelloidea	20	0.002451882
+July	G	1	Gastropoda	0	0
+July	G	1	Monogononta	0	0
+July	G	1	Ostracoda	0	0
+July	G	2	Insecta	1807	0.221527522
+July	G	2	Arthropoda	1389	0.170283192
+July	G	2	Clitellata	37	0.004535981
+July	G	2	Arachnida	381	0.046708349
+July	G	2	Hydrozoa	146	0.017898737
+July	G	2	Bdelloidea	14	0.001716317
+July	G	2	Gastropoda	1	0.000122594
+July	G	2	Monogononta	0	0
+July	G	2	Ostracoda	0	0
+July	G	3	Insecta	1194	0.146377345
+July	G	3	Arthropoda	474	0.058109599
+July	G	3	Clitellata	25	0.003064852
+July	G	3	Arachnida	126	0.015446855
+July	G	3	Hydrozoa	297	0.036410445
+July	G	3	Bdelloidea	0	0
+July	G	3	Gastropoda	0	0
+July	G	3	Monogononta	14	0.001716317
+July	G	3	Ostracoda	0	0
