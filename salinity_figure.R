@@ -18,4 +18,4 @@ ggplot(data=salinity, aes(x=Site,y=Salinity,group=Month))+
   theme(axis.text.y= element_text(size=10))+
   theme(axis.title.x=element_text(size=16))+
   theme(axis.title.y=element_text(size=16))+
-  xlab("\nSite")+ylab("Salinity (ppt)\n")
+  xlab("\nSite")+ylab("Salinity (psu)\n")
