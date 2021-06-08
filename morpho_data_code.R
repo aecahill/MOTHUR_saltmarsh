@@ -1,12 +1,15 @@
 #need file marsh which is the matrix of species
 #need file marshsites 
 
-marsh<-read.table("C:/Users/aecsk/Desktop/morpho_marsh.txt",header=TRUE)
-marshsites<-read.table("C:/Users/aecsk/Desktop/morpho_marsh_sites.txt",header=TRUE)
+marsh<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/morpho_marsh.txt",header=TRUE)
+marshsites<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/morpho_marsh_sites.txt",header=TRUE)
 
 #load vegan
 library(vegan)
 library(wesanderson)
+
+library(cowplot)
+library(ggplot2)
 
 #compute NMDS
 marshnmds<-metaMDS(marsh)
@@ -35,7 +38,7 @@ species.scores <- as.data.frame(scores(marshnmds, "species"))
 species.scores$species <- rownames(species.scores)
 head(species.scores)
 
-library(ggplot2)
+
 
 #make hulls, one for each sea
 
@@ -51,9 +54,11 @@ hull.data<-cbind(hull.data,hull.month) #attach group names to hull dataframe
 
 #plot in ggplot
 
+palwes<-c("#F21A00","#EBCC2A","#3B9AB2")
+
 morphotime<-ggplot() +
-  geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Month),size=5) + # add the point markers
-  scale_colour_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Month),size=3) + # add the point markers
+  scale_colour_manual(values = palwes) +
   coord_equal() +
   theme_bw()+
   theme(axis.text.x = element_blank(),  # remove x-axis text
@@ -65,7 +70,7 @@ morphotime<-ggplot() +
         panel.grid.major = element_blank(),  #remove major-grid labels
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())+ 
-  geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.month),alpha=0.20) #add polygon based on the hulls calculated
+  geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.month),alpha=0.15) #add polygon based on the hulls calculated
 
 #ACROSS SITES
 
@@ -85,14 +90,14 @@ grp.g <- data.scores[datascores$Site == "G", ][chull(datascores[datascores$Site 
                                                                   "G", c("NMDS1", "NMDS2")]), ]
 
 hull.data <- rbind(grp.a, grp.b, grp.c, grp.d,grp.e, grp.f, grp.g) #turn the hulls into a single dataframe
-hull.sample<-c("A","A","A","A","A","B","B","B","B","B","C","C","C","C","C","D","D","D","D","D","E","E","E","E","F","F","F","F","F","G","G","G","G","G") #add column for groups (these are based on this data only)
+hull.sample<-c("A","A","A","A","A","B","B","B","B","C","C","C","C","C","D","D","D","D","D","E","E","E","E","F","F","F","F","F","G","G","G","G") #add column for groups (these are based on this data only)
 hull.data<-cbind(hull.data,hull.sample) #attach group names to hull dataframe
 
 #plot in ggplot
 
 morphosite<-ggplot() +
-  geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Site),size=5) + # add the point markers
-  scale_colour_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Site),size=3) + # add the point markers
+  scale_colour_manual(values=rev(wes_palette("Zissou1", n = 7, type="continuous"))) +
   coord_equal() +
   theme_bw()+
   theme(axis.text.x = element_blank(),  # remove x-axis text
@@ -104,10 +109,9 @@ morphosite<-ggplot() +
         panel.grid.major = element_blank(),  #remove major-grid labels
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())+ 
-  geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.sample),alpha=0.20) #add polygon based on the hulls calculated
+  geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.sample),alpha=0.10) #add polygon based on the hulls calculated
 
 
-library(cowplot)
 
 plot_grid(morphosite,morphotime,labels=c("A","B"),ncol=1)
 
@@ -125,7 +129,7 @@ summary(aov(marshdiv$Simpsons~marshdiv$Month*marshdiv$Site)) #two-way ANOVA
 
 #Margalef
 
-marshrich<-read.table("C:/Users/aecsk/Desktop/morphomarshrich.txt",header=T)
+marshrich<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/morphomarshrich.txt",header=T)
 
 #summary(aov(marshrich$Richness~marshrich$Month))
 #summary(aov(marshrich$Richness~marshrich$Site))
@@ -135,7 +139,7 @@ summary(aov(marshrich$Richness~marshrich$Month*marshrich$Site))
 
 marshrichtime<-ggplot(marshrich,aes(x=Month,y=Richness,fill=Month))+
   geom_boxplot()+ 
-  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  scale_fill_manual(values=palwes) +
   theme_bw()+
   annotate("text", x = 1, y = 7.5, label = "a", size = 4.5)+
   annotate("text", x = 2, y = 10.5, label = "a", size = 4.5)+
@@ -151,7 +155,7 @@ marshrichtime<-ggplot(marshrich,aes(x=Month,y=Richness,fill=Month))+
 
 marshrichsite<-ggplot(marshrich,aes(x=Site,y=Richness,fill=Site))+
   geom_boxplot()+ 
-  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  scale_fill_manual(values=rev(wes_palette("Zissou1", n = 7, type="continuous"))) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
         axis.title.y = element_text(size=16), # remove y-axis labels
@@ -163,7 +167,7 @@ marshrichsite<-ggplot(marshrich,aes(x=Site,y=Richness,fill=Site))+
 
 marshdivtime<-ggplot(marshdiv,aes(x=Month,y=Simpsons,fill=Month))+
   geom_boxplot()+ 
-  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  scale_fill_manual(values=palwes) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
         axis.title.y = element_text(size=16), # remove y-axis labels
@@ -174,7 +178,7 @@ marshdivtime<-ggplot(marshdiv,aes(x=Month,y=Simpsons,fill=Month))+
 
 marshdivsite<-ggplot(marshdiv,aes(x=Site,y=Simpsons,fill=Site))+
   geom_boxplot()+ 
-  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  scale_fill_manual(values=rev(wes_palette("Zissou1", n = 7, type="continuous"))) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
         axis.title.y = element_text(size=16), # remove y-axis labels
