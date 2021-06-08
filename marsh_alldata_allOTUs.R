@@ -1,9 +1,9 @@
-marshotu<-read.table("C:/Users/aecsk/Desktop/allmarshallOTU.txt",header=TRUE)
-rich<-read.table("C:/Users/aecsk/Desktop/marshrichness.txt",header=TRUE)
+marshotu<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/allmarshallOTU.txt",header=TRUE)
+rich<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/marshrichness.txt",header=TRUE)
 colnames(rich)<-c("Month","Site","Rep","Richness","Rich_reduced")
 
 otu2<-t(marshotu)
-sites<-read.table("C:/Users/aecsk/Desktop/allmarshsites.txt",header=TRUE)
+sites<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/allmarshsites.txt",header=TRUE)
 
 
 #load vegan
@@ -65,8 +65,8 @@ hull.data<-cbind(hull.data,hull.sample) #attach group names to hull dataframe
 #plot in ggplot
 
 moldatasite<-ggplot() +
-  geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Point),size=5) + # add the point markers
-  scale_colour_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Point),size=3) + # add the point markers
+  scale_colour_manual(values=rev(wes_palette("Zissou1", n = 7, type="continuous"))) +
   coord_equal() +
   theme_bw()+
   theme(axis.text.x = element_blank(),  # remove x-axis text
@@ -78,7 +78,7 @@ moldatasite<-ggplot() +
         panel.grid.major = element_blank(),  #remove major-grid labels
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())+ 
-  geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.sample),alpha=0.20) #add polygon based on the hulls calculated
+  geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.sample),alpha=0.10) #add polygon based on the hulls calculated
 
 
 #make hulls, one for each SAMPLING SEASON
@@ -96,10 +96,11 @@ hull.sample<-c("A","A","A","A","A","A","B","B","B","B","B","B","C","C","C","C","
 hull.data<-cbind(hull.data,hull.sample) #attach group names to hull dataframe
 
 #plot in ggplot
+palwes<-c("#F21A00","#EBCC2A","#3B9AB2")
 
 moldatatime<-ggplot() +
-  geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Month),size=5) + # add the point markers
-  scale_colour_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Month),size=3) + # add the point markers
+  scale_colour_manual(values = palwes) +
   coord_equal() +
   theme_bw()+
   theme(axis.text.x = element_blank(),  # remove x-axis text
@@ -111,7 +112,7 @@ moldatatime<-ggplot() +
         panel.grid.major = element_blank(),  #remove major-grid labels
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())+ 
-  geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.sample),alpha=0.20) #add polygon based on the hulls calculated
+  geom_polygon(data=hull.data,aes(x=NMDS1,y=NMDS2,group=hull.sample),alpha=0.10) #add polygon based on the hulls calculated
 
 library(cowplot)
 
@@ -140,7 +141,7 @@ TukeyHSD(aov(rich$Richness~rich$Site))
 
 molrichtime<-ggplot(rich,aes(x=Month,y=Richness,fill=Month))+
   geom_boxplot()+ 
-  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  scale_fill_manual(values=palwes) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
         axis.title.y = element_text(size=16), # remove y-axis labels
@@ -151,7 +152,7 @@ molrichtime<-ggplot(rich,aes(x=Month,y=Richness,fill=Month))+
 
 molrichsite<-ggplot(rich,aes(x=Site,y=Richness,fill=Site))+
   geom_boxplot()+ 
-  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  scale_fill_manual(values=rev(wes_palette("Zissou1", n = 7, type="continuous"))) +
   theme_bw()+
   annotate("text", x = 1, y = 51, label = "a", size = 4.5)+
   annotate("text", x = 2, y = 75, label = "bc", size = 4.5)+
@@ -170,7 +171,7 @@ molrichsite<-ggplot(rich,aes(x=Site,y=Richness,fill=Site))+
 
 moldivtime<-ggplot(allmarshdiv,aes(x=Month,y=Simpsons,fill=Month))+
   geom_boxplot()+ 
-  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  scale_fill_manual(values=palwes) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
         axis.title.y = element_text(size=16), # remove y-axis labels
@@ -181,7 +182,7 @@ moldivtime<-ggplot(allmarshdiv,aes(x=Month,y=Simpsons,fill=Month))+
 
 moldivsite<-ggplot(allmarshdiv,aes(x=Site,y=Simpsons,fill=Site))+
   geom_boxplot()+ 
-  scale_fill_manual(values=c("green","darkorange2","gold","black","purple","red","blue")) +
+  scale_fill_manual(values=rev(wes_palette("Zissou1", n = 7, type="continuous"))) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
         axis.title.y = element_text(size=16), # remove y-axis labels
