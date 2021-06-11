@@ -9,6 +9,7 @@ sites<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/allmarshsite
 #load vegan
 library(vegan)
 library(pracma)
+library(wesanderson)
 
 #fourth-root transform the data 
 vec<-1:16616

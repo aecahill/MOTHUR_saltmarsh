@@ -1,5 +1,6 @@
 #need file marsh which is the matrix of species
 #need file marshsites 
+#THIS CODE NOW REQUIRES THE RAREFACTION SCRIPT ALSO!
 
 marsh<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/morpho_marsh.txt",header=TRUE)
 marshsites<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/morpho_marsh_sites.txt",header=TRUE)
@@ -155,6 +156,7 @@ marshrichtime<-ggplot(marshrich,aes(x=Month,y=Richness,fill=Month))+
 
 marshrichsite<-ggplot(marshrich,aes(x=Site,y=Richness,fill=Site))+
   geom_boxplot()+ 
+  geom_jitter(alpha=0.5)+
   scale_fill_manual(values=rev(wes_palette("Zissou1", n = 7, type="continuous"))) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
@@ -167,6 +169,7 @@ marshrichsite<-ggplot(marshrich,aes(x=Site,y=Richness,fill=Site))+
 
 marshdivtime<-ggplot(marshdiv,aes(x=Month,y=Simpsons,fill=Month))+
   geom_boxplot()+ 
+  geom_jitter(alpha=0.5)+
   scale_fill_manual(values=palwes) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
@@ -178,6 +181,7 @@ marshdivtime<-ggplot(marshdiv,aes(x=Month,y=Simpsons,fill=Month))+
 
 marshdivsite<-ggplot(marshdiv,aes(x=Site,y=Simpsons,fill=Site))+
   geom_boxplot()+ 
+  geom_jitter(alpha=0.5)+
   scale_fill_manual(values=rev(wes_palette("Zissou1", n = 7, type="continuous"))) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
@@ -187,4 +191,7 @@ marshdivsite<-ggplot(marshdiv,aes(x=Site,y=Simpsons,fill=Site))+
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())
 
-plot_grid(marshrichsite,marshrichtime,marshdivsite,marshdivtime,labels=c("A","B","C","D"),ncol=2)
+#The graphs for rarefied richness are coded in the rarefaction script!
+#I will need to change this before publishing
+
+plot_grid(marshraresite,marshraretime,marshdivsite,marshdivtime,labels=c("A","B","C","D"),ncol=2)
