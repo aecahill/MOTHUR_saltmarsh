@@ -1,9 +1,9 @@
-marshotu<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/allmarshallOTU.txt",header=TRUE)
-rich<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/marshrichness.txt",header=TRUE)
+marshotu<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/allmarshallOTU.txt",header=TRUE)
+rich<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/marshrichness.txt",header=TRUE)
 colnames(rich)<-c("Month","Site","Rep","Richness","Rich_reduced")
 
 otu2<-t(marshotu)
-sites<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/allmarshsites.txt",header=TRUE)
+sites<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/allmarshsites.txt",header=TRUE)
 
 
 #load vegan
@@ -172,6 +172,7 @@ molrichsite<-ggplot(rich,aes(x=Site,y=Richness,fill=Site))+
 
 moldivtime<-ggplot(allmarshdiv,aes(x=Month,y=Simpsons,fill=Month))+
   geom_boxplot()+ 
+  geom_jitter(alpha=0.5)+
   scale_fill_manual(values=palwes) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
@@ -183,6 +184,7 @@ moldivtime<-ggplot(allmarshdiv,aes(x=Month,y=Simpsons,fill=Month))+
 
 moldivsite<-ggplot(allmarshdiv,aes(x=Site,y=Simpsons,fill=Site))+
   geom_boxplot()+ 
+  geom_jitter(alpha=0.5)+
   scale_fill_manual(values=rev(wes_palette("Zissou1", n = 7, type="continuous"))) +
   theme_bw()+
   theme(axis.title.x = element_text(size=16), # remove x-axis labels
@@ -192,4 +194,19 @@ moldivsite<-ggplot(allmarshdiv,aes(x=Site,y=Simpsons,fill=Site))+
         panel.grid.minor = element_blank(),  #remove minor-grid labels
         plot.background = element_blank())
 
-plot_grid(molrichsite,molrichtime,moldivsite,moldivtime,labels=c("A","B","C","D"),ncol=2)
+#The graphs for rarefied richness are coded in the rarefaction script!
+#I will need to change this before publishing
+
+
+plot_grid(oturaresite,oturaretime,moldivsite,moldivtime,labels=c("A","B","C","D"),ncol=2)
+
+
+#Calculating average reads per OTU after removing zeros 
+
+seqmean<-rowMeans(NA^(otu2==0)*otu2, na.rm=TRUE)
+meantable<-cbind(sites,seqmean)
+
+summary(aov(meantable$seqmean~meantable$Month*meantable$Point))
+
+tapply(meantable$seqmean,meantable$Month,mean)
+tapply(meantable$seqmean,meantable$Month,sd)
