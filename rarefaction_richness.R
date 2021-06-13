@@ -6,9 +6,9 @@ library(wesanderson)
 palwes<-c("#F21A00","#EBCC2A","#3B9AB2")
 
 
-marsh<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/morpho_marsh.txt",header=TRUE)
-marshsites<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/morpho_marsh_sites.txt",header=TRUE)
-marshrich<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/morphomarshrich.txt",header=T)
+marsh<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/morpho_marsh.txt",header=TRUE)
+marshsites<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/morpho_marsh_sites.txt",header=TRUE)
+marshrich<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/morphomarshrich.txt",header=T)
 
 marsh2<-rbind(marsh[1:10,],marsh[12:45,])
 marshrare<-rarefy(marsh2,min(rowSums(marsh2)))
@@ -20,7 +20,7 @@ summary(aov(marshrare2$Richness~marshrare2$Month*marshrare2$Site))
 summary(aov(marshrare2$Rarefied~marshrare2$Month*marshrare2$Site))
 
 #is Tukey what I need here? I don't like this
-TukeyHSD(aov(marshrare2$marshrare~marshrare2$Site))
+TukeyHSD(aov(marshrare2$Rarefied~marshrare2$Site))
 
 # rarefaction curves (color according to site, then season)
 palwes<-c("#F21A00","#EBCC2A","#3B9AB2")
@@ -80,7 +80,7 @@ marshraresite<-ggplot(marshrare2,aes(x=Site,y=Rarefied,fill=Site))+
 
 #repeat with molecular data
 
-marshotu<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/allmarshallOTU.txt",header=TRUE)
+marshotu<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/allmarshallOTU.txt",header=TRUE)
 richotu<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/marshrichness.txt",header=TRUE)
 colnames(richotu)<-c("Month","Site","Rep","Richness","Rich_reduced")
 
