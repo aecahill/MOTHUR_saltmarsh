@@ -81,7 +81,7 @@ marshraresite<-ggplot(marshrare2,aes(x=Site,y=Rarefied,fill=Site))+
 #repeat with molecular data
 
 marshotu<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/allmarshallOTU.txt",header=TRUE)
-richotu<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/marshrichness.txt",header=TRUE)
+richotu<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/marshrichness.txt",header=TRUE)
 colnames(richotu)<-c("Month","Site","Rep","Richness","Rich_reduced")
 
 otu2<-t(marshotu)
