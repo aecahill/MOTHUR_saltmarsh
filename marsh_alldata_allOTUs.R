@@ -210,3 +210,9 @@ summary(aov(meantable$seqmean~meantable$Month*meantable$Point))
 
 tapply(meantable$seqmean,meantable$Month,mean)
 tapply(meantable$seqmean,meantable$Month,sd)
+
+tapply(meantable$seqmean,meantable$Point,mean)
+tapply(meantable$seqmean,meantable$Point,sd)
+
+
+
