@@ -1,4 +1,4 @@
-Month	Point	Rep
+Month	Site	Rep
 April	A	A
 April	A	B
 April	A	C

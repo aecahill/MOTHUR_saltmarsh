@@ -3,7 +3,7 @@ rich<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/marshrichne
 colnames(rich)<-c("Month","Site","Rep","Richness","Rich_reduced")
 
 otu2<-t(marshotu)
-sites<-read.table("C:/Users/acahill/Documents/GitHub/MOTHUR_saltmarsh/allmarshsites.txt",header=TRUE)
+sites<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/allmarshsites.txt",header=TRUE)
 
 
 #load vegan
@@ -44,19 +44,19 @@ library(ggplot2)
 #make hulls, one for each SAMPLING POINT
 #this needs to be checked with each run because depends on data
 
-grp.a <- data.scores[datascores$Point == "A", ][chull(datascores[datascores$Point == 
+grp.a <- data.scores[datascores$Site == "A", ][chull(datascores[datascores$Site == 
                                                                    "A", c("NMDS1", "NMDS2")]), ]
-grp.b <- data.scores[datascores$Point == "B", ][chull(datascores[datascores$Point == 
+grp.b <- data.scores[datascores$Site == "B", ][chull(datascores[datascores$Site == 
                                                                    "B", c("NMDS1", "NMDS2")]), ]
-grp.c <- data.scores[datascores$Point == "C", ][chull(datascores[datascores$Point == 
+grp.c <- data.scores[datascores$Site == "C", ][chull(datascores[datascores$Site == 
                                                                    "C", c("NMDS1", "NMDS2")]), ]
-grp.d <- data.scores[datascores$Point == "D", ][chull(datascores[datascores$Point == 
+grp.d <- data.scores[datascores$Site == "D", ][chull(datascores[datascores$Site == 
                                                                    "D", c("NMDS1", "NMDS2")]), ]
-grp.e <- data.scores[datascores$Point == "E", ][chull(datascores[datascores$Point == 
+grp.e <- data.scores[datascores$Site == "E", ][chull(datascores[datascores$Site == 
                                                                    "E", c("NMDS1", "NMDS2")]), ]
-grp.f <- data.scores[datascores$Point == "F", ][chull(datascores[datascores$Point == 
+grp.f <- data.scores[datascores$Site == "F", ][chull(datascores[datascores$Site == 
                                                                    "F", c("NMDS1", "NMDS2")]), ]
-grp.g <- data.scores[datascores$Point == "G", ][chull(datascores[datascores$Point == 
+grp.g <- data.scores[datascores$Site == "G", ][chull(datascores[datascores$Site == 
                                                                    "G", c("NMDS1", "NMDS2")]), ]
 
 hull.data <- rbind(grp.a, grp.b, grp.c, grp.d,grp.e, grp.f, grp.g) #turn the hulls into a single dataframe
@@ -66,7 +66,7 @@ hull.data<-cbind(hull.data,hull.sample) #attach group names to hull dataframe
 #plot in ggplot
 
 moldatasite<-ggplot() +
-  geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Point),size=3) + # add the point markers
+  geom_point(data=datascores,aes(x=NMDS1,y=NMDS2,colour=Site),size=3) + # add the point markers
   scale_colour_manual(values=rev(wes_palette("Zissou1", n = 7, type="continuous"))) +
   coord_equal() +
   theme_bw()+
@@ -204,15 +204,25 @@ plot_grid(oturaresite,oturaretime,moldivsite,moldivtime,labels=c("A","B","C","D"
 #Calculating average reads per OTU after removing zeros 
 
 seqmean<-rowMeans(NA^(otu2==0)*otu2, na.rm=TRUE)
-meantable<-cbind(sites,seqmean)
+sites_month<-read.table("C:/Users/aecsk/Documents/GitHub/MOTHUR_saltmarsh/marshmolsites_2.txt",header=TRUE)
+meantable<-cbind(sites_month,seqmean)
 
 summary(aov(meantable$seqmean~meantable$Month*meantable$Point))
 
 tapply(meantable$seqmean,meantable$Month,mean)
 tapply(meantable$seqmean,meantable$Month,sd)
 
+
+
 tapply(meantable$seqmean,meantable$Point,mean)
 tapply(meantable$seqmean,meantable$Point,sd)
 
+tapply(meantable$seqmean,meantable$Marsh_site,mean)
 
+seqsums<-rowSums(NA^(otu2==0)*otu2, na.rm=TRUE)
+sumtable<-cbind(sites_month,seqsums)
+tapply(sumtable$seqsums,sumtable$Marsh_site,mean)
+
+summary(aov(sumtable$seqsums~sumtable$Month*sumtable$Point))
+summary(aov(sumtable$seqsums~sumtable$Marsh_site))
 
